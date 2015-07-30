@@ -1,0 +1,277 @@
+// ==========================================================================
+//
+// Elements
+//
+//
+
+.element-login-form {
+  margin: auto;
+  display: block;
+  margin-top: -62px;
+  overflow: auto;
+  width: 350px;
+  margin-top: 115px;
+  height: 450px;
+  background: #fff;
+  position: relative;
+  box-shadow: 0px 0px 1px $colour_darken;
+
+  .element-login-line {
+    position: absolute;
+    top: 61px;
+    width: 100%;
+    height: 1px;
+    background: $colour_lines;
+  }
+
+  .element-login-smile {
+    position: relative;
+    width: 61px;
+    height: 61px;
+    background: $colour_one;
+    margin: 0 auto;
+    display: block;
+    margin-top: 31px;
+    @include border-radius(100%);
+  }
+
+  @include mq("small", "max-width") {
+    width: 100%;
+    box-shadow: none;
+    height: 100%;
+    margin-top: 0;
+    padding-top: 10px;
+    overflow: hidden;
+
+    .element-login-line {
+      display: none;
+    }
+
+    .element-login-smile {
+      display: none;
+    }
+  }
+}
+
+.element-profile-name {
+  height: 35px;
+  background: $colour_tint;
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid $colour_lines;
+  cursor: pointer;
+
+  & h4.type-style-one {
+    padding-top: 7px;
+    width: 100px;
+    display: block;
+    float: left;
+  }
+
+  & i.material-icons {
+    width: 20px;
+    padding-top: 10px;
+    color: $colour_type_light;
+    float: right;
+  }
+}
+
+.element-calendar-link {
+  display: block;
+  width: 100%;
+  height: 108px;
+  padding: 24px 0;
+  background: $colour_tint;
+  border-bottom: 1px solid $colour_lines;
+
+  h5.type-style-one {
+    margin-top: 24px;
+  }
+}
+
+.element-bottom-links {
+
+}
+
+.element-initial-avatar {
+  width: 33px;
+  margin-right: 14px;
+  height: 33px;
+  background: $colour_one;
+  float: left;
+  @include border-radius(100%);
+}
+
+.element-bottom-links {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  margin: 0 0 0 30px;
+  padding-bottom: 24px;
+}
+
+.element-top-options-left {
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+.element-top-options-right {
+  padding: 0;
+  margin: 0;
+  float: right;
+
+  li {
+    float: left;
+    margin-left: 20px;
+    width: 20px;
+  }
+}
+
+.element-section-item {
+  width: 100%;
+  border-bottom: 1px solid $colour_lines;
+  padding: 15px 0px;
+  height: auto;
+  overflow: auto;
+  display: block;
+
+  span.type-style-one {
+    width: 50%;
+  }
+
+  span.type-style-one:nth-child(4) {
+    width: 100%;
+  }
+
+  .md-18 {
+    font-size: 16px;
+  }
+
+  h3 {
+    clear: both;
+    padding: 10px 0;
+    color: $colour_type;
+    font-size: 20px;
+  }
+
+  &:hover {
+    background: $colour_background_dark;
+  }
+}
+
+.element-long-list-header {
+  border-bottom: 1px solid $colour_lines;
+  width: 29%;
+  box-sizing: border-box;
+  padding: 0px 15px 15px 15px;
+  position: fixed;
+
+  .link-dd-one {
+    margin-left: 20px;
+  }
+}
+
+.element-content-box-top {
+  background: $colour-one;
+  padding: 15px 0;
+
+  h2 {
+    padding-top: 150px;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  p {
+    display: none;
+    width: 100%;
+    color: #fff;
+  }
+}
+
+.element-content-box-options {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  background: lighten($colour_one, 5%);
+  padding: 0;
+  height: 60px;
+
+  li {
+    position: relative;
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    border-right: 1px solid $colour_one;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+    cursor: pointer;
+
+    a {
+      color: #fff;
+      text-align: center;
+      width: 100%;
+    }
+
+    &:hover {
+      background: lighten($colour_one, 6%);
+    }
+  }
+
+  li.section-active {
+    background: lighten($colour_one, 10%);
+  }
+}
+
+.element-information-title-one {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  padding: 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $colour_lines;
+  border-top: 1px solid $colour_lines;
+
+  h3 {
+    width: 50%;
+    float: left;
+    color: $colour_type;
+  }
+
+  i.material-icons {
+    float: right;
+    color: $colour_type_light;
+  }
+}
+
+.element-information-item-one {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  height: auto;
+  overflow: auto;
+
+  h3 {
+    width: 50%;
+    float: left;
+  }
+
+  h3.element-span-full, span.element-span-full {
+    width: 100%;
+  }
+
+  span {
+    color: $colour_type;
+    padding: 20px 0 0 0;
+    width: 50%;
+    float: left;
+    display: block;
+
+    i {
+      color: $colour_type_light;
+    }
+  }
+
+}

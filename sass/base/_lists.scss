@@ -1,0 +1,90 @@
+// ==========================================================================
+//
+// Lists
+//
+//
+
+li {
+  padding: 3px 0;
+  list-style-type: none;
+  font-family: $main-font-light;
+}
+
+ul.list-style-one {
+  padding: 0;
+  margin: 20px 0;
+
+  li {
+    padding: 10px 0;
+    opacity: 0;
+
+    .sidebar-trigger-active & {
+        @for $i from 1 through 8 {
+        // Apply animation using :nth-child pseudoclass
+        &:nth-child(#{$i}) {
+          // Include the animation mixin, together with
+          // a delay parameter.
+          @include animation--fadedown($i/10);
+        }
+      }
+    }
+  }
+}
+
+ul.list-style-two {
+  padding: 15px;
+  margin-top: 40px;
+
+  .list-section-head {
+    border-top: 1px solid $colour_lines;
+    margin-top: 30px;
+  }
+
+  li {
+    padding: 30px 0;
+    display: block;
+
+    .list-gutter-column {
+      width: 40px;
+      height: 40px;
+      float: left;
+      display: block;
+      clear: left;
+
+      .material-icons {
+        margin-top: 7px;
+        color: $colour-type-light;
+      }
+
+      h3 {
+        margin-top: 3px;
+        font-size: 18px;
+        padding-left: 5px;
+        display: block;
+        color: $colour-type-light;
+      }
+    }
+
+    .list-central-column {
+      float: left;
+      @include calc(width, "100% - 50px");
+    }
+
+    .list-central-column h4 {
+      float: left;
+      padding: 5px 0;
+      width: 150px;
+      font-family: $main-font-light;
+    }
+
+    .list-central-column span {
+      display: none;
+      float: right;
+      width: 100px;
+      font-size: 12px;
+      text-align: right;
+      color: $colour_type_light;
+      padding: 10px 0;
+    }
+  }
+}

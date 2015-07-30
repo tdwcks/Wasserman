@@ -1,0 +1,42 @@
+// ==========================================================================
+//
+// Tables
+//
+//
+
+table {
+  @include calc(width, "100% - 53px");
+  float: right;
+  font-size: 13px;
+  color: $colour_type;
+  border: none 0;
+  border-collapse: collapse;
+
+  thead {
+    width: 100%;
+
+    th {
+      font-weight: 300;
+      font-family: $main_font;
+      text-align: left;
+      padding: 22px 0;
+    }
+
+    th:first-child {
+      width: 35%;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid $colour_lines;
+
+    td {
+      padding: 25px 0;
+      font-family: $main_font_light;
+    }
+
+    td:first-child {
+      width: 30%;
+    }
+  }
+}

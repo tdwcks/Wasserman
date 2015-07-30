@@ -1,0 +1,27 @@
+// ==========================================================================
+//
+// Animation
+//
+//
+
+@include keyframes(ListFadeIn) {
+  from {
+    @include transform(translateX(20px));
+    opacity: 0;
+  }
+  to {
+    @include transform(translateX(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(fadeDown) {
+  from {
+    @include transform(translateY(-65px));
+    opacity: 0;
+  }
+  to {
+    @include transform(translateY(0));
+    opacity: 1;
+  }
+}

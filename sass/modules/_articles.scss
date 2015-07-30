@@ -1,0 +1,153 @@
+// ==========================================================================
+//
+// Articles
+//
+//
+
+.article-top-message {
+  width: 100%;
+  height: 33px;
+  background: #fff;
+  position: fixed;
+
+  p {
+      margin: 0;
+  }
+
+  .type-superscript {
+    padding: 7px 15px;
+    float: left;
+    display: block;
+  }
+
+  .link-superscript {
+    float: right;
+    padding: 9px 24px;
+  }
+
+  @include mq("small", "max-width") {
+  height: 60px;
+
+    .type-superscript {
+      display: none;
+    }
+  }
+}
+
+.article-colour-fill {
+  @include transition(all, 0.3s, ease-in-out);
+  width: 100%;
+  @include calc(height, "100vh - 33px");
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .sidebar-trigger-active & {
+    background: $colour_one_translucent;
+  }
+}
+
+.article-body {
+  box-sizing: border-box;
+  background: $colour_background;
+  height: auto;
+  overflow: auto;
+  width: 100%;
+  padding: 20px;
+
+  @include mq("small", "max-width") {
+  margin-top: 65px;
+  padding: 0;
+  overflow: hidden;
+  }
+}
+
+.article-search {
+  @include animation(fadeDown 0.2s reverse);
+  opacity: 0;
+  position: fixed;
+
+  .search-active & {
+    @include animation(fadeDown 0.2s ease-in-out);
+    border-top: 1px solid $colour_lines;
+    background: $colour_one;
+    width: 100%;
+    margin-top: 65px;
+    padding: 15px 0;
+    height: auto;
+    overflow: auto;
+    opacity: 1;
+
+    form {
+      margin: 0;
+    }
+  }
+}
+
+.article-key-information {
+  background: $colour_one;
+  width: 100%;
+  padding: 20px 0;
+  height: auto;
+  overflow: auto;
+
+  span.type-style-one {
+    width: 50%;
+    color: #fff;
+  }
+}
+
+.article-sub-navigation {
+  background: $colour_background_dark;
+  width: 100%;
+  display: block;
+  height: auto;
+  overflow: auto;
+  border-bottom: 1px solid $colour_lines;
+}
+
+.article-filter-options {
+  width: 100%;
+  background: $colour_background_dark;
+  height: auto;
+  overflow: auto;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
+.article-long-list, .article-content-box-one {
+  margin-top: 50px;
+}
+
+.article-long-list {
+  @include transition(all, 0.3s, ease-in-out);
+  position: relative;
+  width: 28%;
+  float: left;
+  padding-top: 10px;
+
+  .sidebar-trigger-active & {
+    opacity: 0;
+  }
+}
+
+.article-content-box-one {
+  top: 20px;
+  @include border-radius(1px);
+  width: 45%;
+  height: auto;
+  overflow: auto;
+  position: fixed;
+  left: 28%;
+  background: #fff;
+  box-shadow: 0px 0px 3px $colour_type_light ;
+}
+
+.article-section-content {
+  margin-top: 50px;
+
+  .search-active & {
+    margin-top: 120px;
+  }
+}

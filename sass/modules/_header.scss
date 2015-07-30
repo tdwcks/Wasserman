@@ -1,0 +1,74 @@
+// ==========================================================================
+//
+// Header
+//
+//
+
+.header-type-one {
+  position: fixed;
+  top: 33px;
+  width: 100%;
+  height: 29px;
+  padding: 18px 0;
+  background: $colour_one;
+  @include transition(all, 0.3s, ease-in-out);
+
+  a.link-icon-dark {
+    float: left;
+  }
+
+  h1.type-style-heading {
+      padding: 0px 0 0 0px;
+      font-size: 20px;
+      color: #fff;
+      clear: none;
+      float: left;
+  }
+
+  a.link-style-two {
+    float: right;
+    padding: 95px 64px 0 0;
+  }
+
+  .beyond-waypoint & {
+
+  }
+
+  .sidebar-trigger-active & {
+    width: 80%;
+  }
+
+  @include mq("small", "max-width") {
+    width: 100%;
+    height: 30px;
+    padding: 18px 0;
+    border-bottom: 1px solid $colour_lines;
+
+    a.link-style-two {
+      float: right;
+      padding: 7px 0;
+    }
+
+    .beyond-waypoint & {
+      top: 0;
+    }
+
+    h1.type-style-heading {
+      clear: none;
+      font-family: $main_font_light;
+      font-size: 20px;
+      float: left;
+      padding: 0px 0 0 10px;
+
+      .beyond-waypoint & {
+        padding: 0px 0 0 10px;
+      }
+    }
+  }
+}
+
+.header-type-two {
+  padding: 18px 0 0 0;
+  position: fixed;
+  background: $colour_background;
+}
