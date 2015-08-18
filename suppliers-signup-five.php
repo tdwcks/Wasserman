@@ -73,7 +73,7 @@
 
       <div class="element-text-box">
 
-        <div class="element-title-box">
+        <div class="element-colour-box">
 
           <h1>Finished!</h1>
 

@@ -47,13 +47,13 @@
 
       <div class="element-content-box-header">
 
-        <h2>Thanks!</h2>
+        <h2>Basics</h2>
 
         <div class="element-percentage">
 
-            <div class="c100 p100 small">
+            <div class="c100 p10 small">
 
-              <span>100%</span>
+              <span>10%</span>
 
               <div class="slice">
 
@@ -65,7 +65,7 @@
 
           </div> <!-- c100 p1 small -->
 
-        <span class="type-super-small">You're <span>100%</span> complete.</span>
+        <span class="type-super-small">You're already <span>10%</span> complete.</span>
 
         </div> <!-- element-percentage -->
 
@@ -73,15 +73,67 @@
 
       <div class="element-text-box">
 
-        <div class="element-title-box">
+        <div class="element-colour-box js-trigger-information">
 
-          <h1>Finished!</h1>
+          <h2>Miln Ltd Information</h2>
+
+          <i class="link-icon-white material-icons link-icon-center-bottom">keyboard_arrow_down</i>
+
+        <table class="table-style-two">
+
+          <thead>
+
+            <thead class="table-row-one">
+              <th>Company Name</th>
+              <th>Miln Ltd</th>
+            <thead>
+
+            <tr class="table-row-one">
+              <td>Your Name</td>
+              <td>Tom Wicks</td>
+            </tr>
+
+            <tr class="table-row-one">
+              <td>Your Email</td>
+              <td>tom@miln.co</td>
+            </tr>
+
+            <tr class="table-row-one">
+              <td>Address First Line</td>
+              <td>The Media Centre</td>
+            </tr>
+
+            <tr class="table-row-one">
+              <td>Postcode</td>
+              <td>HD1 6NN</td>
+            </tr>
+
+            <tr class="table-row-one">
+              <td>NDA</td>
+              <td>Signed</td>
+            </tr>
+
+          </thead>
+
+        </table>
 
         </div>
 
         <p>You should receive a confirmation email from us in the next few minutes. Your Wasserman contact will be in touch if we need anthing else from you.</p>
 
       </div>
+
+      <form class="form-register">
+
+        <div class="element-content-box-two-bottom">
+
+          <a class="link-style-three"><i class="material-icons">keyboard_arrow_left</i>Back</a>
+
+          <input type="submit" value="Finish">
+
+        </div>
+
+      </form> <!-- form-login -->
 
     </div> <!-- element-content-box-two -->
 

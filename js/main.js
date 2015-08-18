@@ -36,6 +36,17 @@ $(function() {
     TriggerSidebarExit.click(function(){
       body.removeClass('sidebar-trigger-active');
     return false;
+
+  });
+
+  // Click More Information to show table
+
+  var registerInformation = $('.js-trigger-information');
+
+    registerInformation.click(function(){
+      body.toggleClass('more-information-active');
+    return false;
+
   });
 
   // Click Search to launch the search bar

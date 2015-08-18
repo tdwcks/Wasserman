@@ -317,14 +317,45 @@
   padding: 15px 15px 0 15px;
 }
 
-.element-title-box {
-  text-align: center;
+.element-colour-box {
   background: $colour_four;
-  padding: 50px 0;
+  padding: 25px;
+  min-height: 120px;
+  overflow: hidden;
+  position: relative;
+  @include transition(all, 0.3s, ease-in-out);
 
   h1 {
     color: #fff;
+    text-align: center;
+    vertical-align: middle;
   }
+
+  h2 {
+    padding-top: 40px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  table.table-style-two {
+    width: 100%;
+    padding: 15px;
+    display: none;
+  }
+
+  .more-information-active & {
+      height: auto;
+      overflow: auto;
+
+      table.table-style-two {
+        display: block;
+      }
+
+      h2, h1 {
+        display: none;
+      }
+    }
 }
 
 .element-percentage {

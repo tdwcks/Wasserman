@@ -34,6 +34,13 @@ a {
 	display: block;
 }
 
+.link-icon-center-bottom {
+	bottom: 15px;
+	left: 50%;
+	margin-left: -16px;
+	position: absolute;
+}
+
 .link-icon-one {
 	color: $colour_one;
 }

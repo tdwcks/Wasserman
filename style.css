@@ -275,7 +275,8 @@ table {
   .table-style-two td {
     padding: 15px 30px 15px 0;
     box-sizing: border-box;
-    width: 50%; }
+    width: 50%;
+    text-align: left; }
   .table-style-two th:first-child, .table-style-two td:first-child {
     width: 50%;
     font-family: "TransportNewMedium", sans-serif, 400; }
@@ -374,6 +375,12 @@ a {
   width: 50px;
   font-family: "TransportNewLight", sans-serif, 300;
   display: block; }
+
+.link-icon-center-bottom {
+  bottom: 15px;
+  left: 50%;
+  margin-left: -16px;
+  position: absolute; }
 
 .link-icon-one {
   color: #069CD9; }
@@ -2113,12 +2120,38 @@ input.form-address {
 .element-text-box {
   padding: 15px 15px 0 15px; }
 
-.element-title-box {
-  text-align: center;
+.element-colour-box {
   background: #00D95A;
-  padding: 50px 0; }
-  .element-title-box h1 {
-    color: #fff; }
+  padding: 25px;
+  min-height: 120px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .element-colour-box h1 {
+    color: #fff;
+    text-align: center;
+    vertical-align: middle; }
+  .element-colour-box h2 {
+    padding-top: 40px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle; }
+  .element-colour-box table.table-style-two {
+    width: 100%;
+    padding: 15px;
+    display: none;
+    padding: 15px; }
+  .more-information-active .element-colour-box {
+    height: auto;
+    overflow: auto; }
+    .more-information-active .element-colour-box table.table-style-two {
+      display: block; }
+    .more-information-active .element-colour-box h2, .more-information-active .element-colour-box h1 {
+      display: none; }
 
 .element-percentage {
   float: right;
