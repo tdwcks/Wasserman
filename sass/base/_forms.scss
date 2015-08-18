@@ -77,7 +77,18 @@ input {
 	border: 1px solid $colour-lines;
 }
 
-input:focus {
+textarea {
+	@include border-radius(0px);
+	padding: 8px 15px;
+	 -webkit-appearance: none;
+	font-size: 14px;
+	font-family: $main-font-light;
+	color: $colour_type_light;
+	width: 100%;
+	border: 1px solid $colour-lines;
+}
+
+input:focus, textarea:focus {
 	outline: 0;
 }
 

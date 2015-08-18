@@ -107,18 +107,25 @@
 
         <div class="element-content-box-two-bottom">
 
-          <div class="c100 p1 small">
+          <div class="element-percentage">
 
-          <span>2%</span>
+            <div class="c100 p1 small">
 
-          <div class="slice">
+              <span>2%</span>
 
-            <div class="bar"></div>
+              <div class="slice">
 
-            <div class="fill"></div>
+                <div class="bar"></div>
 
-          </div>
-        </div>
+                <div class="fill"></div> 
+
+              </div> <!-- slice -->
+
+          </div> <!-- c100 p1 small -->
+
+        <span class="type-super-small">You're already <span>2%</span> complete.</span>
+
+        </div> <!-- element-percentage -->
 
           <input type="submit" value="Next">
 

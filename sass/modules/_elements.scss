@@ -295,5 +295,26 @@
       color: $colour_type_light;
     }
   }
+}
+
+.element-percentage {
+  float: left;
+  display: block;
+  @include calc(width, "100% - 130px");
+
+  .c100 {
+    display: block;
+    float: left;
+    margin-right: 13px;
+  }
+
+  .type-super-small {
+    padding: 0;
+    margin-top: 13px;
+    color: $colour-type-light;
+    display: block;
+    float: left;
+
+  }
 
 }
