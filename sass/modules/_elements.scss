@@ -204,12 +204,28 @@
   display: block;
   height: auto;
   overflow: auto;
+
+  .link-style-three {
+    padding-top: 10px;
+    display: block;
+    width: 70px;
+    float: left;
+  }
 }
 
 .element-content-box-header {
   box-sizing: border-box;
-  padding: 15px;
+  padding: 12px;
+  height: auto;
+  overflow: auto;
   border-bottom: 1px solid $colour_lines;
+
+  h2 {
+    width: 180px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+  }
 }
 
 .element-content-box-options {
@@ -297,15 +313,30 @@
   }
 }
 
+.element-text-box {
+  padding: 15px 15px 0 15px;
+}
+
+.element-title-box {
+  text-align: center;
+  background: $colour_four;
+  padding: 50px 0;
+
+  h1 {
+    color: #fff;
+  }
+}
+
 .element-percentage {
-  float: left;
+  float: right;
   display: block;
-  @include calc(width, "100% - 130px");
+  padding: 7px 0 0 0;
+  @include calc(width, "100% - 200px");
 
   .c100 {
     display: block;
-    float: left;
-    margin-right: 13px;
+    float: right;
+    margin-left: 13px;
   }
 
   .type-super-small {
@@ -313,8 +344,7 @@
     margin-top: 13px;
     color: $colour-type-light;
     display: block;
-    float: left;
+    float: right;
 
   }
-
 }

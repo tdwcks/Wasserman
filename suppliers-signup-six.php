@@ -47,13 +47,13 @@
 
       <div class="element-content-box-header">
 
-        <h2>Your Address</h2>
+        <h2>Thanks!</h2>
 
         <div class="element-percentage">
 
-            <div class="c100 p52 small">
+            <div class="c100 p100 small">
 
-              <span>52%</span>
+              <span>100%</span>
 
               <div class="slice">
 
@@ -65,47 +65,23 @@
 
           </div> <!-- c100 p1 small -->
 
-        <span class="type-super-small">You're already <span>52%</span> complete.</span>
+        <span class="type-super-small">You're <span>100%</span> complete.</span>
 
         </div> <!-- element-percentage -->
 
       </div>
 
-      <!-- PCA Postcode-->
-      <link rel="stylesheet" type="text/css" href="http://services.postcodeanywhere.co.uk/css/captureplus-2.30.min.css?key=rz92-up37-rb37-ex99" /><script type="text/javascript" src="http://services.postcodeanywhere.co.uk/js/captureplus-2.30.min.js?key=rz92-up37-rb37-ex99"></script>
+      <div class="element-text-box">
 
-      <form class="form-register">
+        <div class="element-title-box">
 
-        <fieldset>
-
-          <label>Enter Your Postcode:</label>
-
-          <input type="text" name="postcode" placeholder="Your First Name"/>
-
-        </fieldset>
-
-        <fieldset>
-
-          <label>Your Address:</label>
-
-          <input class="form-address" type="text" name="line-1" placeholder="Your First Name"/>
-
-          <input class="form-address" type="text" name="line-2" placeholder="Your First Name"/>
-
-          <input class="form-address" type="text" name="city" placeholder="Your First Name"/>
-
-        </fieldset>
-
-
-        <div class="element-content-box-two-bottom">
-
-          <a class="link-style-three"><i class="material-icons">keyboard_arrow_left</i>Back</a>
-
-          <input type="submit" value="Next">
+          <h1>Finished!</h1>
 
         </div>
 
-      </form> <!-- form-login -->
+        <p>You should receive a confirmation email from us in the next few minutes. Your Wasserman contact will be in touch if we need anthing else from you.</p>
+
+      </div>
 
     </div> <!-- element-content-box-two -->
 

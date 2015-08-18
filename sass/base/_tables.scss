@@ -40,3 +40,34 @@ table {
     }
   }
 }
+
+.table-style-two {
+  padding: 0;
+  font-size: 14px;
+  margin: 0;
+  width: 100%;
+
+  th {
+    padding: 15px 30px 15px 0;
+    box-sizing: border-box;
+    width: 50%;
+  }
+
+  td {
+    padding: 15px 30px 15px 0;
+    box-sizing: border-box;
+    width: 50%;
+  }
+
+  th:first-child, td:first-child {
+    width: 50%;
+    font-family: $main_font;
+  }
+
+  th:last-child, td:last-child {
+    width: 50%;
+    font-family: $main_font;
+  }
+
+}
+

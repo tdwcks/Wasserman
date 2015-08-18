@@ -47,7 +47,27 @@
 
       <div class="element-content-box-header">
 
-        <h2>Please Add Some Information</h2>
+        <h2>Basics</h2>
+
+        <div class="element-percentage">
+
+            <div class="c100 p1 small">
+
+              <span>2%</span>
+
+              <div class="slice">
+
+                <div class="bar"></div>
+
+                <div class="fill"></div> 
+
+              </div> <!-- slice -->
+
+          </div> <!-- c100 p1 small -->
+
+        <span class="type-super-small">You're already <span>2%</span> complete.</span>
+
+        </div> <!-- element-percentage -->
 
       </div>
 
@@ -106,26 +126,6 @@
         </fieldset> <!-- form-half -->
 
         <div class="element-content-box-two-bottom">
-
-          <div class="element-percentage">
-
-            <div class="c100 p1 small">
-
-              <span>2%</span>
-
-              <div class="slice">
-
-                <div class="bar"></div>
-
-                <div class="fill"></div> 
-
-              </div> <!-- slice -->
-
-          </div> <!-- c100 p1 small -->
-
-        <span class="type-super-small">You're already <span>2%</span> complete.</span>
-
-        </div> <!-- element-percentage -->
 
           <input type="submit" value="Next">
 

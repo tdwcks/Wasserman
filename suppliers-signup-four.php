@@ -47,13 +47,13 @@
 
       <div class="element-content-box-header">
 
-        <h2>Your Address</h2>
+        <h2>Summary</h2>
 
         <div class="element-percentage">
 
-            <div class="c100 p52 small">
+            <div class="c100 p99 small">
 
-              <span>52%</span>
+              <span>99%</span>
 
               <div class="slice">
 
@@ -65,43 +65,57 @@
 
           </div> <!-- c100 p1 small -->
 
-        <span class="type-super-small">You're already <span>52%</span> complete.</span>
+        <span class="type-super-small">You're already <span>99%</span> complete.</span>
 
         </div> <!-- element-percentage -->
 
       </div>
 
-      <!-- PCA Postcode-->
-      <link rel="stylesheet" type="text/css" href="http://services.postcodeanywhere.co.uk/css/captureplus-2.30.min.css?key=rz92-up37-rb37-ex99" /><script type="text/javascript" src="http://services.postcodeanywhere.co.uk/js/captureplus-2.30.min.js?key=rz92-up37-rb37-ex99"></script>
-
       <form class="form-register">
 
-        <fieldset>
+        <table class="table-style-two">
 
-          <label>Enter Your Postcode:</label>
+          <thead>
 
-          <input type="text" name="postcode" placeholder="Your First Name"/>
+            <thead class="table-row-one">
+              <th>Company Name</th>
+              <th>Miln Ltd</th>
+            <thead>
 
-        </fieldset>
+            <tr class="table-row-one">
+              <td>Your Name</td>
+              <td>Tom Wicks</td>
+            </tr>
 
-        <fieldset>
+            <tr class="table-row-one">
+              <td>Your Email</td>
+              <td>tom@miln.co</td>
+            </tr>
 
-          <label>Your Address:</label>
+            <tr class="table-row-one">
+              <td>Address First Line</td>
+              <td>The Media Centre</td>
+            </tr>
 
-          <input class="form-address" type="text" name="line-1" placeholder="Your First Name"/>
+            <tr class="table-row-one">
+              <td>Postcode</td>
+              <td>HD1 6NN</td>
+            </tr>
 
-          <input class="form-address" type="text" name="line-2" placeholder="Your First Name"/>
+            <tr class="table-row-one">
+              <td>NDA</td>
+              <td>Signed</td>
+            </tr>
 
-          <input class="form-address" type="text" name="city" placeholder="Your First Name"/>
+          </thead>
 
-        </fieldset>
-
+        </table>
 
         <div class="element-content-box-two-bottom">
 
           <a class="link-style-three"><i class="material-icons">keyboard_arrow_left</i>Back</a>
 
-          <input type="submit" value="Next">
+          <input type="submit" value="Finish">
 
         </div>
 
