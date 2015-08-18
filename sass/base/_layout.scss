@@ -8,10 +8,6 @@
   display: block;
   margin: 0 auto;
   @include calc(width, "100% - 48px");
-
-  @include mq("small", "max-width") {
-    @include calc(width, "100% - 28px");
-  }
 }
 
 .layout-side-bar {
@@ -34,11 +30,15 @@
   }
 
   @include mq("medium", "max-width") {
-    display: none;
+    width: 40%;
   }
 
   @include mq("small", "max-width") {
-    display: none;
+    width: 70%;
+  }
+
+  @include mq("super-small", "max-width") {
+    width: 80%;
   }
 }
 
@@ -55,13 +55,14 @@
     width: 80%;
   }
 
-  @include mq("small", "max-width") {
-    width: 100%;
+  @include mq("super-small", "max-width") {
+    
+    .sidebar-trigger-active & {
+      width: 30%;
+    }
+    
   }
 
-  .layout-side-bar--collapsed & {
-
-  }
 }
 
 .layout-span-one {

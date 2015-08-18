@@ -49,9 +49,6 @@ body {
   margin: 0 !important;
   padding: 0;
 
-  @include mq("small", "max-width") {
-  }
-
   &.base-background-one {
     background: $colour-background;
   }

@@ -63,8 +63,6 @@
 
         <h1 class="type-style-heading">Log In</h1>
 
-        <a href="#" class="link-style-two">Forgot Password?</a>
-
       </div> <!-- layout-container -->
 
     </header> <!-- header-type-one -->
@@ -75,7 +73,7 @@
 
       <div class="element-login-smile">
 
-      </div> <!-- element-login-avatar -->
+      </div> <!-- element-login-smile -->
 
       <div class="form-top">
 

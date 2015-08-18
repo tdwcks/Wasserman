@@ -25,8 +25,7 @@
     padding: 9px 24px;
   }
 
-  @include mq("small", "max-width") {
-  height: 60px;
+  @include mq("extra-small", "max-width") {
 
     .type-superscript {
       display: none;
@@ -46,6 +45,11 @@
   .sidebar-trigger-active & {
     background: $colour_one_translucent;
   }
+}
+
+.article-help {
+  top: 33px;
+  background: $colour_one_translucent;
 }
 
 .article-body {

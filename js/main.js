@@ -56,10 +56,6 @@ $(function() {
 
   });
 
-  // Switch suppliers information
-
-  
-
 	// Make header smaller on scroll
     $(window).scroll(function(){
       var scrollTop = $(window).scrollTop();
