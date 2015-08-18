@@ -107,17 +107,18 @@
 
         <div class="element-content-box-two-bottom">
 
-          <ul class="list-process-steps">
+          <div class="c100 p1 small">
 
-            <li class="list-process-step list-process-current"></li>
+          <span>2%</span>
 
-            <li class="list-process-step"></li>
+          <div class="slice">
 
-            <li class="list-process-step"></li>
+            <div class="bar"></div>
 
-            <li class="list-process-step"></li>
+            <div class="fill"></div>
 
-          </ul> <!-- list-process-steps -->
+          </div>
+        </div>
 
           <input type="submit" value="Next">
 
