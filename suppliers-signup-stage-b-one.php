@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable="no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable="no"">
 
   <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -47,7 +47,7 @@
 
       <div class="element-content-box-header">
 
-        <h2>Basics</h2>
+        <h2>People</h2>
 
         <div class="element-percentage">
 
@@ -75,17 +75,17 @@
 
         <fieldset class="form-half">
 
-          <label>Your First Name:</label>
+          <label>Your Name:</label>
 
-          <input type="text" name="first-name" placeholder="Your First Name"/>
+          <input type="text" name="first-name" value="James Clare" placeholder="Your First Name"/>
 
         </fieldset> <!-- form-half -->
 
         <fieldset class="form-half">
 
-          <label>Your Last Name:</label>
+          <label>Your Job Role:</label>
 
-          <input type="text" name="last-name" placeholder="Your Last Name"/>
+          <input type="text" name="job-role" placeholder="Your Last Name"/>
 
         </fieldset> <!-- form-half -->
 
@@ -93,37 +93,55 @@
 
           <label>Your Email:</label>
 
-          <input type="text" name="email" placeholder="Your First Name"/>
+          <input type="text" name="email" value="james@miln.co" placeholder="Your First Name"/>
 
         </fieldset> <!-- form-half -->
 
         <fieldset class="form-half">
 
-          <label>Company Name:</label>
+          <label>Your Phone Number:</label>
 
-          <input type="text" name="company-name" placeholder="Your Last Name"/>
-
-        </fieldset> <!-- form-half -->
-
-        <fieldset class="form-half">
-
-         <label>Password:</label>
-
-          <input type="password" name="password" placeholder="Your Password"/>
-
-          <span class="type-super-small">Oops! Wrong Password</span>
+          <input type="text" name="phone-number" placeholder="Your Last Name"/>
 
         </fieldset> <!-- form-half -->
 
-        <fieldset class="form-half">
+        <div class="element-additional-fields">
 
-          <label>Repeat Password:</label>
+          <fieldset class="form-half">
 
-          <input type="password" name="password-verify" placeholder="Your Password"/>
+          <label>Name:</label>
 
-          <span class="type-super-small">Oops! Wrong Password</span>
+          <input type="text" name="first-name" placeholder="Your First Name"/>
 
-        </fieldset> <!-- form-half -->
+          </fieldset> <!-- form-half -->
+
+          <fieldset class="form-half">
+
+            <label>Job Role:</label>
+
+            <input type="text" name="job-role" placeholder="Your Last Name"/>
+
+          </fieldset> <!-- form-half -->
+
+          <fieldset class="form-half">
+
+            <label>Your Email:</label>
+
+            <input type="text" name="email" placeholder="Your First Name"/>
+
+          </fieldset> <!-- form-half -->
+
+          <fieldset class="form-half">
+
+            <label>Phone Number:</label>
+
+            <input type="text" name="phone-number" placeholder="Your Last Name"/>
+
+          </fieldset> <!-- form-half -->
+
+        </div>
+
+        <a href="" class="link-style-five js-trigger-new-contact"><i class="material-icons">add</i> Add New Contact</a>
 
         <div class="element-content-box-two-bottom">
 

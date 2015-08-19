@@ -39,15 +39,27 @@ $(function() {
 
   });
 
-  // Click More Information to show table
+  // Click Exit to get help
 
-  var registerInformation = $('.js-trigger-information');
+  var triggerHelp = $('.js-trigger-help');
 
-    registerInformation.click(function(){
-      body.toggleClass('more-information-active');
+    triggerHelp.click(function(){
+      body.toggleClass('help-is-active');
     return false;
 
   });
+
+  // Click to add registration field
+
+  var newContactTrigger = $('.js-trigger-new-contact');
+
+    newContactTrigger.click(function(){
+      body.addClass('additional-contact-active');
+    return false;
+
+  });
+
+
 
   // Click Search to launch the search bar
 

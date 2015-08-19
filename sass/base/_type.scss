@@ -144,7 +144,8 @@ h5 {
 p {
   font-weight: 300;
   font-family: $main_font_light;
-  font-size: 19px;
+  font-size: 18px;
+  line-height: 1.5em;
   color: $colour_type;
 
   a {
@@ -198,6 +199,10 @@ span {
     font-size: 14px;
     float: left;
     display: block;
+
+    @include mq("small", "max-width") {
+      font-size: 15px;
+    }
   }
 
   &.type-super-small {

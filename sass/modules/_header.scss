@@ -75,9 +75,14 @@
 }
 
 .header-type-two {
+  width: 100%;
   padding: 18px 0 0 0;
   position: fixed;
   background: $colour_background;
+
+  .element-percentage {
+    width: 100%;
+  }
 }
 
 .header-type-three {
@@ -136,6 +141,7 @@
       font-size: 20px;
       float: left;
       padding: 0px 0 0 10px;
+      margin-top: 0;
 
       .beyond-waypoint & {
         padding: 0px 0 0 10px;
@@ -143,7 +149,7 @@
     }
   }
 
-   @include mq("super-small", "max-width") {
+  @include mq("super-small", "max-width") {
 
     .beyond-waypoint & {
       top: 33px;

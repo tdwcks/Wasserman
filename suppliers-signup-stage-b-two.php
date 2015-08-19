@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable="no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable="no"">
 
   <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -47,7 +47,7 @@
 
       <div class="element-content-box-header">
 
-        <h2>Basics</h2>
+        <h2>Payment</h2>
 
         <div class="element-percentage">
 
@@ -71,61 +71,74 @@
 
       </div>
 
-      <form class="form-register">
+    <form class="form-register">
 
         <fieldset class="form-half">
 
-          <label>Your First Name:</label>
+          <label>Account Number:</label>
 
-          <input type="text" name="first-name" placeholder="Your First Name"/>
+          <input type="text" name="acount-number"/>
 
-        </fieldset> <!-- form-half -->
-
-        <fieldset class="form-half">
-
-          <label>Your Last Name:</label>
-
-          <input type="text" name="last-name" placeholder="Your Last Name"/>
-
-        </fieldset> <!-- form-half -->
+        </fieldset>
 
         <fieldset class="form-half">
 
-          <label>Your Email:</label>
+          <label>Sort Code:</label>
 
-          <input type="text" name="email" placeholder="Your First Name"/>
+          <input type="text" name="sort-code"/>
 
-        </fieldset> <!-- form-half -->
+        </fieldset>
 
-        <fieldset class="form-half">
+        <fieldset>
 
-          <label>Company Name:</label>
+          <label>Account Name:</label>
+          
+          <input type="text" name="sort-code"/>
 
-          <input type="text" name="company-name" placeholder="Your Last Name"/>
+        </fieldset>
 
-        </fieldset> <!-- form-half -->
-
-        <fieldset class="form-half">
-
-         <label>Password:</label>
-
-          <input type="password" name="password" placeholder="Your Password"/>
-
-          <span class="type-super-small">Oops! Wrong Password</span>
-
-        </fieldset> <!-- form-half -->
+        <fieldset></fieldset>
 
         <fieldset class="form-half">
 
-          <label>Repeat Password:</label>
+          <label>Bank Name:</label>
+          
+          <input type="text" name="sort-code"/>
 
-          <input type="password" name="password-verify" placeholder="Your Password"/>
+        </fieldset>
 
-          <span class="type-super-small">Oops! Wrong Password</span>
+        <fieldset class="form-half">
 
-        </fieldset> <!-- form-half -->
+          <label>Bank Address:</label>
+
+          <input class="form-address" type="text" name="bank-line-1" placeholder="Your First Name"/>
+
+          <input class="form-address" type="text" name="bank-line-2" placeholder="Your First Name"/>
+
+          <input class="form-address" type="text" name="bank-city" placeholder="Your First Name"/>
+
+        </fieldset>
+
+        <fieldset class="form-half">
+
+          <label>Iban:</label>
+          
+          <input type="text" name="iban"/>
+
+        </fieldset>
+
+        <fieldset class="form-half">
+
+          <label>Bic Code:</label>
+          
+          <input type="text" name="bic-code"/>
+
+        </fieldset>
+
 
         <div class="element-content-box-two-bottom">
+
+          <a class="link-style-three"><i class="material-icons">keyboard_arrow_left</i>Back</a>
 
           <input type="submit" value="Next">
 

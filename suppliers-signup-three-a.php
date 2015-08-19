@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable="no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable="no"">
 
   <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -47,13 +47,13 @@
 
       <div class="element-content-box-header">
 
-        <h2>Basics</h2>
+        <h2>NDA</h2>
 
         <div class="element-percentage">
 
-            <div class="c100 p1 small">
+            <div class="c100 p68 small">
 
-              <span>2%</span>
+              <span>68%</span>
 
               <div class="slice">
 
@@ -65,73 +65,33 @@
 
           </div> <!-- c100 p1 small -->
 
-        <span class="type-super-small">You're already <span>2%</span> complete.</span>
+        <span class="type-super-small">You're <span>68%</span> complete.</span>
 
         </div> <!-- element-percentage -->
 
       </div>
 
+      <div class="element-text-box">
+
+        <p>In order for us to start working with you we need you to sign our Non Disclosure Agreement. Find it on the next page along with a box for your signiture.</p>
+
+        <p class="type-supporting">Here at Wasserman Experience, we’re developing some great ideas and working on some very cool projects and we care about what we do. While you’re visiting, you may see, or hear about, some of these ideas and projects and we consider any information you learn while you’re here, to be our confidential information. </p>
+
+      </div>
+
       <form class="form-register">
 
-        <fieldset class="form-half">
+      <div class="element-content-box-two-bottom">
 
-          <label>Your First Name:</label>
-
-          <input type="text" name="first-name" placeholder="Your First Name"/>
-
-        </fieldset> <!-- form-half -->
-
-        <fieldset class="form-half">
-
-          <label>Your Last Name:</label>
-
-          <input type="text" name="last-name" placeholder="Your Last Name"/>
-
-        </fieldset> <!-- form-half -->
-
-        <fieldset class="form-half">
-
-          <label>Your Email:</label>
-
-          <input type="text" name="email" placeholder="Your First Name"/>
-
-        </fieldset> <!-- form-half -->
-
-        <fieldset class="form-half">
-
-          <label>Company Name:</label>
-
-          <input type="text" name="company-name" placeholder="Your Last Name"/>
-
-        </fieldset> <!-- form-half -->
-
-        <fieldset class="form-half">
-
-         <label>Password:</label>
-
-          <input type="password" name="password" placeholder="Your Password"/>
-
-          <span class="type-super-small">Oops! Wrong Password</span>
-
-        </fieldset> <!-- form-half -->
-
-        <fieldset class="form-half">
-
-          <label>Repeat Password:</label>
-
-          <input type="password" name="password-verify" placeholder="Your Password"/>
-
-          <span class="type-super-small">Oops! Wrong Password</span>
-
-        </fieldset> <!-- form-half -->
-
-        <div class="element-content-box-two-bottom">
+          <a class="link-style-three"><i class="material-icons">keyboard_arrow_left</i>Back</a>
 
           <input type="submit" value="Next">
 
         </div>
 
       </form> <!-- form-login -->
+
+      
 
     </div> <!-- element-content-box-two -->
 

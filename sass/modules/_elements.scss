@@ -187,29 +187,61 @@
 
 .element-content-box-two {
   width: 45%;
+  max-width: 575px;
   overflow: auto;
   height: auto;
   background: #fff;
   display: block; 
   margin: 0 auto;
-  margin-top: 113px;
+  margin-top: 50px;
   position: relative;
   box-shadow: 0px 0px 2px $colour_type_light;
+
+  @include mq("medium", "max-width") {
+    width: 55%;
+  }
+
+  @include mq("small", "max-width") {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 65px;
+    box-shadow: none;
+    background: $colour-background;
+    position: relative;
+    z-index: 0;
+
+    h2 {
+      display: none;
+    }
+  }
+
+  a.link-style-five {
+    padding-top: 20px;
+    display: block;
+    float: left;
+  }
 }
 
 .element-content-box-two-bottom {
   clear: both;
   width: 100%;
-  padding-top: 25px;
+  padding-top: 15px;
   display: block;
   height: auto;
   overflow: auto;
 
   .link-style-three {
-    padding-top: 10px;
     display: block;
     width: 70px;
     float: left;
+  }
+
+  @include mq("small", "max-width") {
+    padding-top: 15px;
+
+    .link-style-three {
+      display: none;
+    }
   }
 }
 
@@ -282,6 +314,7 @@
     float: right;
     color: $colour_type_light;
   }
+
 }
 
 .element-information-item-one {
@@ -314,13 +347,34 @@
 }
 
 .element-text-box {
-  padding: 15px 15px 0 15px;
+  padding: 15px 25px 0 25px;
+
+  p {
+    color: $colour_type;
+  }
+}
+
+.element-half {
+  float: left;
+  @include calc(width, "50% - 11px");
+
+  &:nth-child(even) {
+    margin-left: 15px;
+  }
+
+  @include mq("super-small", "max-width") {
+      width: 100%;
+
+      &:nth-child(even) {
+      margin-left: 0;
+    }
+  }
 }
 
 .element-colour-box {
   background: $colour_four;
-  padding: 25px;
-  min-height: 120px;
+  padding: 50px;
+  min-height: 60px;
   overflow: hidden;
   position: relative;
   @include transition(all, 0.3s, ease-in-out);
@@ -337,25 +391,6 @@
     text-align: center;
     vertical-align: middle;
   }
-
-  table.table-style-two {
-    width: 100%;
-    padding: 15px;
-    display: none;
-  }
-
-  .more-information-active & {
-      height: auto;
-      overflow: auto;
-
-      table.table-style-two {
-        display: block;
-      }
-
-      h2, h1 {
-        display: none;
-      }
-    }
 }
 
 .element-percentage {
@@ -377,5 +412,93 @@
     display: block;
     float: right;
 
+  }
+
+  @include mq("small", "max-width") {
+    width: 100%;
+
+    .type-super-small {
+      text-align: left;
+      float: left;
+    }
+  }
+}
+
+.element-additional-fields {
+  display: none;
+
+  .additional-contact-active & {
+    display: block;
+  }
+}
+
+.element-right-signiture {
+  position: absolute;
+  overflow: hidden;
+  left: 50%;
+  margin-left: -353px;
+  width: 706px;
+  padding: 30px 0;
+  display: block;
+}
+
+.element-dropdown-section {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+
+  .element-dropdown-item {
+    border-top: 1px solid $colour_lines;
+    width: 100%;
+    padding: 15px 0 10px 0;
+    overflow: auto;
+    height: auto;
+    cursor: pointer;
+
+    h5 {
+      float : left;
+      @include calc(width, "100% - 60px");
+    }
+
+    i.material-icons {
+      width: 30px;
+      float: right;
+      text-align: right;
+    }
+
+    &.element-drop-down-item-active {
+      border-bottom: none;
+    }
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+
+    &:last-child  .element-dropdown-item {
+      border-bottom: 1px solid $colour_lines;
+    }
+  }
+
+  .element-dropdown-sub-list {
+    padding: 0 0 15px 0;
+    height: auto;
+    overflow: auto;
+    margin: 0;
+  }
+
+  .element-dropdown-sub-item {
+    padding: 8px 0;
+    cursor: pointer;
+  }
+
+  @include mq("small", "max-width") {
+    padding: 0;
+
+    .element-dropdown-item {
+      padding: 15px 0 20px 0;
+    }
   }
 }

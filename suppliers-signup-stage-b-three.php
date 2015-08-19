@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable="no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable="no"">
 
   <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -47,7 +47,7 @@
 
       <div class="element-content-box-header">
 
-        <h2>Basics</h2>
+        <h2>Finance</h2>
 
         <div class="element-percentage">
 
@@ -71,61 +71,43 @@
 
       </div>
 
-      <form class="form-register">
+    <form class="form-register">
 
         <fieldset class="form-half">
 
-          <label>Your First Name:</label>
+          <label>Years Trading:</label>
 
-          <input type="text" name="first-name" placeholder="Your First Name"/>
+          <input type="text" name="years-trading"/>
 
-        </fieldset> <!-- form-half -->
-
-        <fieldset class="form-half">
-
-          <label>Your Last Name:</label>
-
-          <input type="text" name="last-name" placeholder="Your Last Name"/>
-
-        </fieldset> <!-- form-half -->
+        </fieldset>
 
         <fieldset class="form-half">
 
-          <label>Your Email:</label>
+          <label>Company Number:</label>
 
-          <input type="text" name="email" placeholder="Your First Name"/>
+          <input type="text" name="company-number"/>
 
-        </fieldset> <!-- form-half -->
-
-        <fieldset class="form-half">
-
-          <label>Company Name:</label>
-
-          <input type="text" name="company-name" placeholder="Your Last Name"/>
-
-        </fieldset> <!-- form-half -->
+        </fieldset>
 
         <fieldset class="form-half">
 
-         <label>Password:</label>
+          <label>Vat Number:</label>
+          
+          <input type="text" name="vat-number"/>
 
-          <input type="password" name="password" placeholder="Your Password"/>
-
-          <span class="type-super-small">Oops! Wrong Password</span>
-
-        </fieldset> <!-- form-half -->
+        </fieldset>
 
         <fieldset class="form-half">
 
-          <label>Repeat Password:</label>
+          <label>Currency:</label>
+          
+          <input type="text" name="currency"/>
 
-          <input type="password" name="password-verify" placeholder="Your Password"/>
-
-          <span class="type-super-small">Oops! Wrong Password</span>
-
-        </fieldset> <!-- form-half -->
+        </fieldset>
 
         <div class="element-content-box-two-bottom">
+
+          <a class="link-style-three"><i class="material-icons">keyboard_arrow_left</i>Back</a>
 
           <input type="submit" value="Next">
 
