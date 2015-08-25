@@ -1,0 +1,12 @@
+// ==========================================================================
+//
+// Variables
+//
+//
+
+$box-shadow-one:  0px 0px 1px $colour_type_light;
+$box-shadow-two:  0px 0px 1px lighten($colour_type_light, 10%);
+
+$clear-development-bar: 33px;
+
+$lines: 1px solid $colour_lines;

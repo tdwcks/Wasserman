@@ -5,22 +5,22 @@
 //
 
 ::-webkit-input-placeholder {
-	color: #fff;
+	color: $colour_type;
 	font-weight: 300;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: rgba(255, 255, 255, 0.7);
+   color: $colour_type;
    font-weight: 300;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  color: rgba(255, 255, 255, 0.7);
+  color: $colour_type;
    font-weight: 300;
 }
 
 :-ms-input-placeholder {
-   color: rgba(255, 255, 255, 0.7);
+   color: $colour_type;
    font-weight: 300;
 }
 
@@ -39,21 +39,20 @@
 }
 
 .form-radio-button {
-	@include border-radius(50%);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: top top;
 	padding: 0;
 	margin-left: 0;
-	width: 15px;
-	height: 15px;
+	width: 18px;
+	height: 18px;
 	float: left;
-	border: 2px solid $colour-two;
 	margin-right: 15px;
 	display: block;
+	background: url('img/empty-checkbox.svg');
 
 	.form-radio-button-active & {
-
-		background: $colour-four;
-		border: 2px solid $colour-four;
-	
+		background: url('img/checked.svg');
 	}
 }
 
@@ -150,14 +149,15 @@ form.form-search {
 	clear: both;
 	width: 100%;
 	float: left;
-	margin-top: 17px;
+	margin-top: 14px;
+	margin-bottom: 3px;
 	position: relative;
 
 	i.material-icons {
-		color: #fff;
+		color: $colour_type;
 		position: absolute;
 		z-index: 5;
-		top: 10px;
+		top: 7px;
 		left: 0;
 	}
 }
@@ -167,13 +167,13 @@ form.form-register {
 }
 
 input[type="search"] {
-	background: $colour-one;
-	font-size: 20px;
+	background: none;
+	font-size: 1.2em;
 	border: 0;
 	box-sizing: border-box;
-	padding: 5px 30px 5px 40px;
+	padding: 5px 30px 5px 30px;
 	height: 40px;
-	color: #fff;
+	color: $colour_type;
 	cursor: pointer;
 	width: 100%;
 	float: right;

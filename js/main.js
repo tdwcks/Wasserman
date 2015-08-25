@@ -59,8 +59,6 @@ $(function() {
 
   });
 
-
-
   // Click Search to launch the search bar
 
   var TriggerSearch = $('.js-trigger-search');
@@ -78,6 +76,32 @@ $(function() {
     }
 
   });
+
+  // element-category-slider {
+    
+    var TriggerPanelOne = $('.js-trigger-panel-one');
+        TriggerPanelTwo = $('.js-trigger-panel-two');
+        
+        TriggerPanelTwo.click(function(){
+
+        activeCategory = '#' + $(this).attr('title');
+
+        $('.element-category-item').removeClass('element-category-active');
+        $(activeCategory).addClass('element-category-active');
+
+        body.addClass('show-panel-two');
+        
+        return false;
+        
+        });
+
+        TriggerPanelOne.click(function(){
+
+           body.removeClass('show-panel-two');
+
+        return false;
+
+        });
 
 	// Make header smaller on scroll
     $(window).scroll(function(){

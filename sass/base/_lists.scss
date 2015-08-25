@@ -89,6 +89,68 @@ ul.list-style-two {
   }
 }
 
+ul.list-style-three {
+  padding: 0;
+  margin: 0;
+
+  li.list-three-item {
+    padding: 22px 26px 16px 26px;
+    height: auto;
+    overflow: auto;
+    border-bottom: $lines;
+    cursor: pointer;
+
+    h5 {
+      float: left;
+      color: $colour_type_light;
+      margin: 0;
+      font-size: 15px;
+      padding: 0;
+      font-family: $main_font_light;
+    }
+
+    i {
+      float: right;
+      display: block;
+      color: $colour_type_light;
+    }
+  }
+}
+
+ul.list-style-four {
+  padding: 22px 26px 16px 26px;
+  margin: 0;
+
+  li {
+    @include calc(width, "50% - 12px");
+    float: left;
+    height: 50px;
+    cursor: pointer;
+
+    &:nth-child(odd) {
+      margin-right: 20px;
+    }
+  }
+
+  .form-radio-button {
+    display: block;
+    float: left;
+  }
+
+  .type-style-one {
+    float: left;
+    display: block;
+    @include calc(width, "100% - 35px");
+  }
+
+}
+
+.list-large-content {
+  width: 100%;
+  border-top: $lines;
+  border-bottom: $lines;
+}
+
 .active-border{
     position: relative;
     text-align: center;
@@ -100,6 +162,31 @@ ul.list-style-two {
         linear-gradient(91deg, transparent 50%, #A2ECFB 50%),
         linear-gradient(90deg, #A2ECFB 50%, transparent 50%);
 }
+
+ul.list-style-five {
+  @include calc(width, "100% - 26px");
+  padding: 0;
+  margin: 0 0 0 26px;
+  box-sizing: border-box;
+
+  li {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    overflow: auto;
+
+    .list-large-content {
+      padding: 20px 0;
+
+    }
+
+    .list-large-column {
+      width: 20%;
+      float: left;
+    }
+  }
+}
+
 
 
 

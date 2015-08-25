@@ -502,3 +502,132 @@
     }
   }
 }
+
+.element-category-button {
+  display: block;
+  width: 50%;
+  float: left;
+  border-top: $lines;
+  border-bottom: $lines;
+  border-right: $lines;
+  box-sizing: border-box;
+  padding: 18px 0 20px 0;
+  cursor: pointer;
+
+  h5 {
+    text-align: center;
+    color: $colour_type_light;
+    font-size: 15px;
+    font-family: $main_font_light;
+  }
+
+  &:nth-child(odd) { 
+    border-right: none;
+  }
+
+  &:hover {
+    background: $colour_tint;
+  }
+
+  &.element-category-button-active {
+    background: $colour_tint;
+  }
+}
+
+.element-category-slider-holder {
+  @include transition(all, 0.3s, ease-in-out);
+  position: relative;
+  clear: both;
+  width: 800px;
+  height: 50px;
+
+  .element-category-slider {
+    width: 400px;
+    float: left;
+    height: 300px;
+  }
+
+  .element-panel-two {
+    position: relative;
+  }
+
+  .show-panel-two & {
+    margin-left: -400px;
+  }
+}
+
+.element-category-title {
+    padding: 22px 26px 16px 26px;
+    height: auto;
+    overflow: auto;
+    border-bottom: $lines;
+    cursor: pointer;
+
+    h5 {
+      float: left;
+      color: $colour_type_light;
+      margin: 0;
+      font-size: 15px;
+      padding: 0;
+      font-family: $main_font_light;
+    }
+
+    i {
+      float: right;
+      display: block;
+      color: $colour_type_light;
+    }
+  }
+
+.element-category-item {
+  display: none;
+}
+
+.element-left-pane-title {
+  padding: 20px 0 16px 0;
+  background: #fff;
+
+  .type-style-heading {
+    color: $colour_type;
+    font-family: $main_font_light;
+    font-size: 1.1em;
+    padding-top: 3px;
+    margin-left: 40px;
+  }
+
+}
+
+.element-category-active {
+  display: block;
+}
+
+.element-tag {
+  display: inline-block;
+  background: #fff;
+  font-size: 1em;
+  padding: 7px 8px 4px 8px;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: $box-shadow-two;
+  margin-right: 15px;
+  @include border-radius(2px);
+  margin-bottom: 20px;
+
+  i {
+    font-size: 15px;
+    line-height: 0;
+    margin-right: 0;
+    padding: 0;
+    margin: 0;
+    color: $colour_type_light;
+  }
+
+  span {
+    padding-top: 5px;
+    color: $colour_type;
+  }
+
+  &:hover i {
+    color: $colour_type;
+  }
+}

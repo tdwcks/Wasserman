@@ -7,7 +7,7 @@
 .article-top-message {
   width: 100%;
   height: 33px;
-  background: #fff;
+  background: $colour_tint;
   position: fixed;
 
   p {
@@ -68,25 +68,15 @@
 }
 
 .article-search {
-  @include animation(fadeDown 0.2s reverse);
-  opacity: 0;
   position: fixed;
-
-  .search-active & {
-    @include animation(fadeDown 0.2s ease-in-out);
-    border-top: 1px solid $colour_lines;
-    background: $colour_one;
-    width: 100%;
-    margin-top: 65px;
-    padding: 15px 0;
-    height: auto;
-    overflow: auto;
-    opacity: 1;
-
-    form {
-      margin: 0;
-    }
-  }
+  background: #fff;
+  border-bottom: $lines;
+  border-left: $lines;
+  width: 100%;
+  margin-top: 33px;
+  padding: 0 0 8px 0;
+  height: auto;
+  overflow: auto;
 }
 
 .article-key-information {
@@ -145,7 +135,7 @@
   position: fixed;
   left: 28%;
   background: #fff;
-  box-shadow: 0px 0px 3px $colour_type_light ;
+  box-shadow: $box-shadow-one;
 }
 
 .article-section-content {
@@ -154,4 +144,27 @@
   .search-active & {
     margin-top: 120px;
   }
+}
+
+.article-left-pane {
+  overflow: hidden;
+  position: relative;
+  top: $clear-development-bar;
+  width: 400px;
+  background: #fff;
+  float: left;
+  box-shadow: $box-shadow-one;
+  @include calc(height, "100vh - 33px");
+}
+
+.article-main-content {
+  @include calc(width, "100% - 400px");
+  @include calc(height, "100vh - 33px");
+  float: right;
+}
+
+.article-tags {
+  width: 100%;
+  margin-top: 99px;
+  padding: 15px 0 0 0;
 }
