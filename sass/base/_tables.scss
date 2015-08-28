@@ -5,38 +5,61 @@
 //
 
 table {
-  @include calc(width, "100% - 53px");
+  @include calc(width, "100% - 100px");
   float: right;
-  font-size: 13px;
-  color: $colour_type;
+  font-size: 0.889em;
+  color: $colourType;
   border: none 0;
   border-collapse: collapse;
 
   thead {
     width: 100%;
+    border-bottom: $lines;
+
+    &:before {
+      content: 0;
+      background: none;
+    }
 
     th {
       font-weight: 300;
-      font-family: $main_font;
+      font-family: $mainFont;
       text-align: left;
       padding: 22px 0;
     }
 
     th:first-child {
-      width: 30%;
+      width: 40%;
+    }
+
+    &:before {
+      display: none;
     }
   }
 
   tr {
-    border-bottom: 1px solid $colour_lines;
+    position: relative;
+    width: 100%;
+    border-bottom: $lines;
 
     td {
       padding: 25px 0;
-      font-family: $main_font_light;
+      font-family: $mainFontLight;
     }
 
     td:first-child {
-      width: 30%;
+      width: 40%;
+    }
+
+    &:before {
+      width: 40px;
+      margin-top: 15px;
+      height: 40px; 
+      content: "";
+      @include border-radius(100%);
+      background: $colourTypeLight;
+      display: block;
+      margin-left: -64px;
     }
   }
 }
@@ -62,12 +85,12 @@ table {
 
   th:first-child, td:first-child {
     width: 50%;
-    font-family: $main_font;
+    font-family: $mainFont;
   }
 
   th:last-child, td:last-child {
     width: 50%;
-    font-family: $main_font;
+    font-family: $mainFont;
   }
 
 }

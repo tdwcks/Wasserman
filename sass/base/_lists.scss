@@ -7,7 +7,7 @@
 li {
   padding: 3px 0;
   list-style-type: none;
-  font-family: $main-font-light;
+  font-family: $mainFontLight;
 }
 
 ul.list-style-one {
@@ -36,7 +36,7 @@ ul.list-style-two {
   margin-top: 40px;
 
   .list-section-head {
-    border-top: 1px solid $colour_lines;
+    border-top: 1px solid $colourLines;
     margin-top: 30px;
   }
 
@@ -53,7 +53,7 @@ ul.list-style-two {
 
       .material-icons {
         margin-top: 7px;
-        color: $colour-type-light;
+        color: $colourTypeLight;
       }
 
       h3 {
@@ -61,7 +61,7 @@ ul.list-style-two {
         font-size: 18px;
         padding-left: 5px;
         display: block;
-        color: $colour-type-light;
+        color: $colourTypeLight;
       }
     }
 
@@ -74,7 +74,7 @@ ul.list-style-two {
       float: left;
       padding: 5px 0;
       width: 150px;
-      font-family: $main-font-light;
+      font-family: $mainFontLight;
     }
 
     .list-central-column span {
@@ -83,7 +83,7 @@ ul.list-style-two {
       width: 100px;
       font-size: 12px;
       text-align: right;
-      color: $colour_type_light;
+      color: $colourTypeLight;
       padding: 10px 0;
     }
   }
@@ -102,17 +102,17 @@ ul.list-style-three {
 
     h5 {
       float: left;
-      color: $colour_type_light;
+      color: $colourType;
       margin: 0;
       font-size: 15px;
       padding: 0;
-      font-family: $main_font_light;
+      font-family: $mainFontLight;
     }
 
     i {
       float: right;
       display: block;
-      color: $colour_type_light;
+      color: $colourOne;
     }
   }
 }
@@ -175,14 +175,55 @@ ul.list-style-five {
     height: auto;
     overflow: auto;
 
-    .list-large-content {
-      padding: 20px 0;
+    .element-initial-avatar {
+      margin-top: 22px;
+      margin-right: 22px;
+      width: 40px;
+      height: 40px;
 
+      h3 {
+        font-size: 15px;
+      }
+    }
+
+    .list-large-style-five {
+      float: left;
+      @include calc(width, "100% - 65px");
+      padding: 15px 0 10px 0;
+      height: auto;
+      overflow: auto;
+      border-top: $lines;
+    }
+
+    h3.list-title {
+      font-size: 16px;
+      padding-bottom: 5px;
+    }
+
+    span {
+      font-size: 16px;
+      padding-bottom: 5px;
+      display: block;
+      color: $colourType;
+
+      a {
+        font-size: 16px;
+        color: $colourType;
+      }
     }
 
     .list-large-column {
-      width: 20%;
+      width: 33.3%;
       float: left;
+    }
+  }
+
+  &:last-child {
+    
+    .list-large-style-five {
+
+      border-bottom: $lines;
+
     }
   }
 }

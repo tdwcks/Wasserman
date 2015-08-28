@@ -5,22 +5,22 @@
 //
 
 ::-webkit-input-placeholder {
-	color: $colour_type;
+	color: $colourTypeLight;
 	font-weight: 300;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: $colour_type;
+   color: $colourTypeLight;
    font-weight: 300;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  color: $colour_type;
+  color: $colourTypeLight;
    font-weight: 300;
 }
 
 :-ms-input-placeholder {
-   color: $colour_type;
+   color: $colourTypeLight;
    font-weight: 300;
 }
 
@@ -29,7 +29,7 @@
 	padding: 15px;
 	box-sizing: border-box;
 	width: 100%;
-	border-top: 1px solid $colour_lines;
+	border-top: 1px solid $colourLines;
 }
 
 .form-top {
@@ -88,10 +88,10 @@ label {
 	padding: 15px 0px;
 	font-size: 12px;
 	text-transform: uppercase;
-	color: $colour_type_light;
+	color: $colourTypeLight;
 	letter-spacing: 1px;
 	display: block;
-	font-family: $main-font-light;
+	font-family: $mainFontLight;
 }
 
 input {
@@ -99,10 +99,10 @@ input {
 	padding: 8px 15px;
 	 -webkit-appearance: none;
 	font-size: 14px;
-	font-family: $main-font-light;
-	color: $colour_type_light;
+	font-family: $mainFontLight;
+	color: $colourTypeLight;
 	width: 100%;
-	border: 1px solid $colour-lines;
+	border: 1px solid $colourLines;
 
 	@include mq("small", "max-width") {
     	padding: 10px 15px;
@@ -116,10 +116,10 @@ textarea {
 	padding: 8px 15px;
 	 -webkit-appearance: none;
 	font-size: 14px;
-	font-family: $main-font-light;
-	color: $colour_type_light;
+	font-family: $mainFontLight;
+	color: $colourTypeLight;
 	width: 100%;
-	border: 1px solid $colour-lines;
+	border: 1px solid $colourLines;
 }
 
 input:focus, textarea:focus {
@@ -128,7 +128,7 @@ input:focus, textarea:focus {
 
 input[type="submit"] {
 	border: 0;
-	background: $colour-one;
+	background: $colourOne;
 	text-transform: uppercase;
 	font-size: 12px;
 	letter-spacing: 1px;
@@ -154,7 +154,7 @@ form.form-search {
 	position: relative;
 
 	i.material-icons {
-		color: $colour_type;
+		color: $colourType;
 		position: absolute;
 		z-index: 5;
 		top: 7px;
@@ -173,7 +173,7 @@ input[type="search"] {
 	box-sizing: border-box;
 	padding: 5px 30px 5px 30px;
 	height: 40px;
-	color: $colour_type;
+	color: $colourType;
 	cursor: pointer;
 	width: 100%;
 	float: right;
@@ -201,10 +201,10 @@ input.form-address {
 	margin: 0;
 
 	&:first-child {
-		border-top: 1px solid $colour_lines;
+		border-top: 1px solid $colourLines;
 	}
 
 	&:last-child {
-		border-bottom: 1px solid $colour_lines;
+		border-bottom: 1px solid $colourLines;
 	}
 }

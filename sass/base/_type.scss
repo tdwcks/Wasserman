@@ -4,6 +4,91 @@
 //
 //
 
+
+html {
+  font-size: 1em;
+}
+
+$mainFont: "TransportNewMedium", sans-serif, 400;
+$mainFontLight: "TransportNewLight", sans-serif, 300;
+$mainFontHeavy: "TransportNewHeavy", sans-serif, 500;
+
+h1, h2, h3, h4, h5, h6, span {
+  font-family: $mainFont;
+  font-weight: 300;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  position: relative;
+  color: $colourType;
+}
+
+h1 {
+  font-size: 1.602em;
+}
+
+h2 {
+  font-size: 1.424em;
+}
+
+h3 {
+  font-size: 1.266em;
+}
+
+h4 {
+  font-size: 1.125em;
+}
+
+h5, p {
+  font-size: 1em;
+}
+
+p {
+  font-family: $mainFontLight;
+  line-height: 1.45;
+
+  &.type-bold {
+    font-family: $mainFont;
+  }
+
+  &.type-heavy {
+    font-family: $mainFontHeavy;
+  }
+}
+
+span {
+  font-family: $mainFontLight;
+  line-height: 1.45;
+  font-size: 0.889em;
+
+  &.type-bold {
+    font-family: $mainFont;
+  }
+
+  &.type-heavy {
+    font-family: $mainFontHeavy;
+  }
+}
+
+.type-light {
+  font-family: $mainFontLight;
+}
+
+.type-colour-grey {
+  color: $colourTypeLight;
+}
+
+.type-colour-one {
+  color: $colourOne;
+}
+
+// ==========================================================================
+//
+// Typography
+//
+//
+
 /**
  * @license
  * MyFonts Webfont Build ID 3048796, 2015-06-25T09:06:16-0400
@@ -53,7 +138,7 @@
  * License: http://www.myfonts.com/viewlicense?type=web&buildid=3048796
  *
  * © 2015 MyFonts Inc
-*/
+
 
 $main_font: "TransportNewMedium", sans-serif, 400;
 $main_font_light: "TransportNewLight", sans-serif, 300;
@@ -221,3 +306,5 @@ i {
   padding-right: 12px;
   vertical-align: middle;
 }
+
+*/

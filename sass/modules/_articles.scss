@@ -7,17 +7,32 @@
 .article-top-message {
   width: 100%;
   height: 33px;
-  background: $colour_tint;
+  background: #fff;
   position: fixed;
 
   p {
       margin: 0;
+      width: 70px;
+      float: left;
+      height: 33px;
+      box-sizing: border-box;
+      display:  table-cell;
+      vertical-align: middle;
+      text-align: center;
+      background: $colourOne;
+      color: #fff;
+      font-size: 12px;
+      padding: 8px 0 0 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
   }
 
-  .type-superscript {
+  span {
+    @include calc(width, "50% - 0px");
     padding: 7px 15px;
     float: left;
     display: block;
+    color: $colourTypeLight;
   }
 
   .link-superscript {
@@ -43,18 +58,18 @@
   left: 0;
 
   .sidebar-trigger-active & {
-    background: $colour_one_translucent;
+    background: $colourOneTranslucent;
   }
 }
 
 .article-help {
   top: 33px;
-  background: $colour_one_translucent;
+  background: $colourOneTranslucent;
 }
 
 .article-body {
   box-sizing: border-box;
-  background: $colour_background;
+  background: $colourBackground;
   height: auto;
   overflow: auto;
   width: 100%;
@@ -71,16 +86,15 @@
   position: fixed;
   background: #fff;
   border-bottom: $lines;
-  border-left: $lines;
   width: 100%;
-  margin-top: 33px;
+  margin-top: 99px;
   padding: 0 0 8px 0;
   height: auto;
   overflow: auto;
 }
 
 .article-key-information {
-  background: $colour_one;
+  background: $colourOne;
   width: 100%;
   padding: 20px 0;
   height: auto;
@@ -93,21 +107,12 @@
 }
 
 .article-sub-navigation {
-  background: $colour_background_dark;
+  background: $colourBackgroundDark;
   width: 100%;
   display: block;
   height: auto;
   overflow: auto;
-  border-bottom: 1px solid $colour_lines;
-}
-
-.article-filter-options {
-  width: 100%;
-  background: $colour_background_dark;
-  height: auto;
-  overflow: auto;
-  padding: 15px 0;
-  box-sizing: border-box;
+  border-bottom: 1px solid $colourLines;
 }
 
 .article-long-list, .article-content-box-one {
@@ -135,7 +140,7 @@
   position: fixed;
   left: 28%;
   background: #fff;
-  box-shadow: $box-shadow-one;
+  box-shadow: $boxShadowOne;
 }
 
 .article-section-content {
@@ -148,13 +153,14 @@
 
 .article-left-pane {
   overflow: hidden;
-  position: relative;
-  top: $clear-development-bar;
+  position: fixed;
+  border-right: $lines;
+  top: $clearDevelopmentBar;
   width: 400px;
   background: #fff;
   float: left;
-  box-shadow: $box-shadow-one;
-  @include calc(height, "100vh - 33px");
+  margin-top: 69px;
+  @include calc(height, "100vh - 93px");
 }
 
 .article-main-content {
@@ -165,6 +171,6 @@
 
 .article-tags {
   width: 100%;
-  margin-top: 99px;
+  margin-top: 165px;
   padding: 15px 0 0 0;
 }

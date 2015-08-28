@@ -6,6 +6,60 @@ Website URL:	XXXXXXX
 Version:		1.0
 
 */
+html {
+  font-size: 1em; }
+
+h1, h2, h3, h4, h5, h6, span {
+  font-family: "TransportNewMedium", sans-serif, 400;
+  font-weight: 300;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  position: relative;
+  color: #404040; }
+
+h1 {
+  font-size: 1.602em; }
+
+h2 {
+  font-size: 1.424em; }
+
+h3 {
+  font-size: 1.266em; }
+
+h4 {
+  font-size: 1.125em; }
+
+h5, p {
+  font-size: 1em; }
+
+p {
+  font-family: "TransportNewLight", sans-serif, 300;
+  line-height: 1.45; }
+  p.type-bold {
+    font-family: "TransportNewMedium", sans-serif, 400; }
+  p.type-heavy {
+    font-family: "TransportNewHeavy", sans-serif, 500; }
+
+span {
+  font-family: "TransportNewLight", sans-serif, 300;
+  line-height: 1.45;
+  font-size: 0.889em; }
+  span.type-bold {
+    font-family: "TransportNewMedium", sans-serif, 400; }
+  span.type-heavy {
+    font-family: "TransportNewHeavy", sans-serif, 500; }
+
+.type-light {
+  font-family: "TransportNewLight", sans-serif, 300; }
+
+.type-colour-grey {
+  color: #A3A3A3; }
+
+.type-colour-one {
+  color: #069CD9; }
+
 /**
  * @license
  * MyFonts Webfont Build ID 3048796, 2015-06-25T09:06:16-0400
@@ -55,133 +109,176 @@ Version:		1.0
  * License: http://www.myfonts.com/viewlicense?type=web&buildid=3048796
  *
  * © 2015 MyFonts Inc
-*/
+
+
+$main_font: "TransportNewMedium", sans-serif, 400;
+$main_font_light: "TransportNewLight", sans-serif, 300;
+$main_font_heavy: "TransportNewHeavy", sans-serif, 500;
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "TransportNewMedium", sans-serif, 400;
+  font-family: $main_font;
   font-weight: 300;
   padding: 0;
   margin: 0;
   font-weight: normal;
   position: relative;
-  color: #404040; }
+  color: $colour-type;
+}
 
 h1 {
-  font-family: "TransportNewMedium", sans-serif, 400;
-  font-size: 48px;
-  line-height: 1.5em; }
-  h1.type-style-heading {
-    color: #fff;
-    font-size: 26px; }
+    font-family: $main_font;
+    font-size: 48px;
+    line-height: 1.5em;
+
+    &.type-style-heading {
+      color: #fff;
+      font-size: 26px;
+    }
+}
 
 h2 {
-  font-family: "TransportNewMedium", sans-serif, 400;
-  color: #404040;
-  font-size: 20px;
-  line-height: 1.5em; }
+    font-family: $main_font;
+    color: $colour-type;
+    font-size: 20px;
+    line-height: 1.5em;
+}
 
 h3 {
-  font-family: "TransportNewMedium", sans-serif, 400;
-  font-size: 16px;
-  line-height: 1.5em; }
-  h3.type-style-one {
-    color: #069CD9;
-    font-family: "TransportNewLight", sans-serif, 300;
-    font-size: 24px;
-    line-height: 1.3em; }
-  h3.type-initial {
-    font-size: 11px;
-    text-align: center;
-    vertical-align: center;
-    text-align: center;
-    padding: 10px 0;
-    color: #fff; }
+    font-family: $main_font;
+    font-size: 16px;
+    line-height: 1.5em;
+
+    &.type-style-one {
+      color: $colour_one;
+      font-family: $main_font_light;
+      font-size: 24px;
+      line-height: 1.3em;
+    }
+
+    &.type-initial {
+      font-size: 11px;
+      text-align: center;
+      vertical-align: center;
+      text-align: center;
+      padding: 10px 0;
+      color: #fff;
+    }
+}
 
 h4 {
-  font-family: "TransportNewMedium", sans-serif, 400;
+  font-family: $main_font;
   font-size: 19px;
-  line-height: 1.5em; }
-  h4.type-style-one {
+  line-height: 1.5em;
+
+  &.type-style-one {
     font-weight: 300;
-    color: #404040;
-    font-family: "TransportNewLight", sans-serif, 300;
-    font-size: 16px; }
+    color: $colour_type;
+    font-family: $main_font_light;
+    font-size: 16px;
+  }
+}
 
 h5 {
-  font-family: "TransportNewMedium", sans-serif, 400;
-  font-size: 19px;
-  line-height: 1.5em; }
-  h5.type-style-one {
-    color: #404040;
-    font-family: "TransportNewLight", sans-serif, 300;
-    font-size: 14px;
-    padding-top: 4px;
-    display: block; }
+    font-family: $main_font;
+    font-size: 19px;
+    line-height: 1.5em;
+
+    &.type-style-one {
+      color: $colour_type;
+      font-family: $main_font_light;
+      font-size: 14px;
+      padding-top: 4px;
+      display: block;
+    }
+}
 
 .type-half {
   width: 50%;
-  float: left; }
+  float: left;
+}
 
 p {
   font-weight: 300;
-  font-family: "TransportNewLight", sans-serif, 300;
+  font-family: $main_font_light;
   font-size: 18px;
   line-height: 1.5em;
-  color: #404040; }
-  p a {
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    color: #005EA5; }
-  p.type-supporting {
-    font-size: 16px; }
-  p.type-superscript {
-    color: #9898A5;
-    font-size: 13px; }
-  p.type-fill-one {
+  color: $colour_type;
+
+  a {
+    @include transition(all, 0.4s, ease-in-out);
+    color: $link-colour;
+
+    &:hover {
+
+    }
+  }
+
+  &.type-supporting {
+    font-size: 16px;
+  }
+
+  &.type-superscript {
+    color: $colour-type-light;
+    font-size: 13px;
+  }
+
+  &.type-fill-one {
     width: 70px;
     float: left;
     height: 33px;
     box-sizing: border-box;
-    display: table-cell;
+    display:  table-cell;
     vertical-align: middle;
     text-align: center;
-    background: #069CD9;
+    background: $colour-one;
     color: #fff;
     font-size: 12px;
     padding: 8px 0 0 0;
     text-transform: uppercase;
-    letter-spacing: 1px; }
-  p strong {
-    font-weight: bold; }
-  p em {
-    font-style: italic; }
+    letter-spacing: 1px;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+}
 
 span {
-  font-family: "TransportNewLight", sans-serif, 300; }
-  span.type-style-one {
-    color: #9898A5;
+  font-family: $main_font_light;
+
+  &.type-style-one {
+    color: $colour_type_light;
     font-size: 14px;
     float: left;
-    display: block; }
-    @media (max-width: 835px) {
-      span.type-style-one {
-        font-size: 15px; } }
-  span.type-super-small {
+    display: block;
+
+    @include mq("small", "max-width") {
+      font-size: 15px;
+    }
+  }
+
+  &.type-super-small {
     font-size: 11px;
     display: block;
     padding: 20px 0 0 0;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-family: "TransportNewLight", sans-serif, 300;
-    color: #FF5B34; }
+    font-family: $main_font_light;
+    color: $colour_two;
+  }
+}
 
 i {
   display: inline;
   padding-right: 12px;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
+*/
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -218,7 +315,6 @@ body:after {
 
 body {
   font-family: "TransportNewMedium", sans-serif, 400;
-  font-weight: 200;
   font-style: normal;
   background: #F6F6F6;
   margin: 0 !important;
@@ -242,30 +338,51 @@ iframe {
   text-shadow: none; }
 
 table {
-  width: -moz-calc(100% - 53px);
-  width: -webkit-calc(100% - 53px);
-  width: calc(100% - 53px);
+  width: -moz-calc(100% - 100px);
+  width: -webkit-calc(100% - 100px);
+  width: calc(100% - 100px);
   float: right;
-  font-size: 13px;
+  font-size: 0.889em;
   color: #404040;
   border: none 0;
   border-collapse: collapse; }
   table thead {
-    width: 100%; }
+    width: 100%;
+    border-bottom: 1px solid rgba(30, 49, 100, 0.1); }
+    table thead:before {
+      content: 0;
+      background: none; }
     table thead th {
       font-weight: 300;
       font-family: "TransportNewMedium", sans-serif, 400;
       text-align: left;
       padding: 22px 0; }
     table thead th:first-child {
-      width: 30%; }
+      width: 40%; }
+    table thead:before {
+      display: none; }
   table tr {
+    position: relative;
+    width: 100%;
     border-bottom: 1px solid rgba(30, 49, 100, 0.1); }
     table tr td {
       padding: 25px 0;
       font-family: "TransportNewLight", sans-serif, 300; }
     table tr td:first-child {
-      width: 30%; }
+      width: 40%; }
+    table tr:before {
+      width: 40px;
+      margin-top: 15px;
+      height: 40px;
+      content: "";
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+      border-radius: 100%;
+      background: #A3A3A3;
+      display: block;
+      margin-left: -64px; }
 
 .table-style-two {
   padding: 0;
@@ -418,14 +535,14 @@ a {
 
 .link-style-three {
   font-size: 14px;
-  color: #9898A5;
+  color: #A3A3A3;
   padding: 8px 0 0 0; }
   .link-style-three i {
     padding-right: 0; }
 
 .link-style-four {
   font-size: 15px;
-  color: #9898A5; }
+  color: #A3A3A3; }
   .link-style-four:hover {
     color: #069CD9; }
 
@@ -528,7 +645,7 @@ a {
     z-index: 5; }
 
 .header-type-two {
-  z-index: 10; }
+  z-index: 100; }
 
 .article-body {
   z-index: 1; }
@@ -674,13 +791,13 @@ ul.list-style-two {
       clear: left; }
       ul.list-style-two li .list-gutter-column .material-icons {
         margin-top: 7px;
-        color: #9898A5; }
+        color: #A3A3A3; }
       ul.list-style-two li .list-gutter-column h3 {
         margin-top: 3px;
         font-size: 18px;
         padding-left: 5px;
         display: block;
-        color: #9898A5; }
+        color: #A3A3A3; }
     ul.list-style-two li .list-central-column {
       float: left;
       width: -moz-calc(100% - 50px);
@@ -697,7 +814,7 @@ ul.list-style-two {
       width: 100px;
       font-size: 12px;
       text-align: right;
-      color: #9898A5;
+      color: #A3A3A3;
       padding: 10px 0; }
 
 ul.list-style-three {
@@ -711,7 +828,7 @@ ul.list-style-three {
     cursor: pointer; }
     ul.list-style-three li.list-three-item h5 {
       float: left;
-      color: #9898A5;
+      color: #404040;
       margin: 0;
       font-size: 15px;
       padding: 0;
@@ -719,7 +836,7 @@ ul.list-style-three {
     ul.list-style-three li.list-three-item i {
       float: right;
       display: block;
-      color: #9898A5; }
+      color: #069CD9; }
 
 ul.list-style-four {
   padding: 22px 26px 16px 26px;
@@ -769,11 +886,38 @@ ul.list-style-five {
     margin: 0;
     height: auto;
     overflow: auto; }
-    ul.list-style-five li .list-large-content {
-      padding: 20px 0; }
+    ul.list-style-five li .element-initial-avatar {
+      margin-top: 22px;
+      margin-right: 22px;
+      width: 40px;
+      height: 40px; }
+      ul.list-style-five li .element-initial-avatar h3 {
+        font-size: 15px; }
+    ul.list-style-five li .list-large-style-five {
+      float: left;
+      width: -moz-calc(100% - 65px);
+      width: -webkit-calc(100% - 65px);
+      width: calc(100% - 65px);
+      padding: 15px 0 10px 0;
+      height: auto;
+      overflow: auto;
+      border-top: 1px solid rgba(30, 49, 100, 0.1); }
+    ul.list-style-five li h3.list-title {
+      font-size: 16px;
+      padding-bottom: 5px; }
+    ul.list-style-five li span {
+      font-size: 16px;
+      padding-bottom: 5px;
+      display: block;
+      color: #404040; }
+      ul.list-style-five li span a {
+        font-size: 16px;
+        color: #404040; }
     ul.list-style-five li .list-large-column {
-      width: 20%;
+      width: 33.3%;
       float: left; }
+  ul.list-style-five:last-child .list-large-style-five {
+    border-bottom: 1px solid rgba(30, 49, 100, 0.1); }
 
 @-webkit-keyframes ListFadeIn {
   from {
@@ -834,21 +978,21 @@ ul.list-style-five {
     transform: translateY(0);
     opacity: 1; } }
 ::-webkit-input-placeholder {
-  color: #404040;
+  color: #A3A3A3;
   font-weight: 300; }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #404040;
+  color: #A3A3A3;
   font-weight: 300; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #404040;
+  color: #A3A3A3;
   font-weight: 300; }
 
 :-ms-input-placeholder {
-  color: #404040;
+  color: #A3A3A3;
   font-weight: 300; }
 
 .form-bottom {
@@ -902,7 +1046,7 @@ label {
   padding: 15px 0px;
   font-size: 12px;
   text-transform: uppercase;
-  color: #9898A5;
+  color: #A3A3A3;
   letter-spacing: 1px;
   display: block;
   font-family: "TransportNewLight", sans-serif, 300; }
@@ -917,7 +1061,7 @@ input {
   -webkit-appearance: none;
   font-size: 14px;
   font-family: "TransportNewLight", sans-serif, 300;
-  color: #9898A5;
+  color: #A3A3A3;
   width: 100%;
   border: 1px solid rgba(30, 49, 100, 0.1); }
   @media (max-width: 835px) {
@@ -939,7 +1083,7 @@ textarea {
   -webkit-appearance: none;
   font-size: 14px;
   font-family: "TransportNewLight", sans-serif, 300;
-  color: #9898A5;
+  color: #A3A3A3;
   width: 100%;
   border: 1px solid rgba(30, 49, 100, 0.1); }
 
@@ -1022,14 +1166,31 @@ input.form-address {
 .article-top-message {
   width: 100%;
   height: 33px;
-  background: rgba(30, 49, 100, 0.03);
+  background: #fff;
   position: fixed; }
   .article-top-message p {
-    margin: 0; }
-  .article-top-message .type-superscript {
+    margin: 0;
+    width: 70px;
+    float: left;
+    height: 33px;
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background: #069CD9;
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .article-top-message span {
+    width: -moz-calc(50% - 0px);
+    width: -webkit-calc(50% - 0px);
+    width: calc(50% - 0px);
     padding: 7px 15px;
     float: left;
-    display: block; }
+    display: block;
+    color: #A3A3A3; }
   .article-top-message .link-superscript {
     float: right;
     padding: 9px 24px; }
@@ -1075,9 +1236,8 @@ input.form-address {
   position: fixed;
   background: #fff;
   border-bottom: 1px solid rgba(30, 49, 100, 0.1);
-  border-left: 1px solid rgba(30, 49, 100, 0.1);
   width: 100%;
-  margin-top: 33px;
+  margin-top: 99px;
   padding: 0 0 8px 0;
   height: auto;
   overflow: auto; }
@@ -1099,14 +1259,6 @@ input.form-address {
   height: auto;
   overflow: auto;
   border-bottom: 1px solid rgba(30, 49, 100, 0.1); }
-
-.article-filter-options {
-  width: 100%;
-  background: #EDEDED;
-  height: auto;
-  overflow: auto;
-  padding: 15px 0;
-  box-sizing: border-box; }
 
 .article-long-list, .article-content-box-one {
   margin-top: 50px; }
@@ -1137,7 +1289,7 @@ input.form-address {
   position: fixed;
   left: 28%;
   background: #fff;
-  box-shadow: 0px 0px 1px #9898A5; }
+  box-shadow: 0px 0px 1px #A3A3A3; }
 
 .article-section-content {
   margin-top: 50px; }
@@ -1146,15 +1298,16 @@ input.form-address {
 
 .article-left-pane {
   overflow: hidden;
-  position: relative;
+  position: fixed;
+  border-right: 1px solid rgba(30, 49, 100, 0.1);
   top: 33px;
   width: 400px;
   background: #fff;
   float: left;
-  box-shadow: 0px 0px 1px #9898A5;
-  height: -moz-calc(100vh - 33px);
-  height: -webkit-calc(100vh - 33px);
-  height: calc(100vh - 33px); }
+  margin-top: 69px;
+  height: -moz-calc(100vh - 93px);
+  height: -webkit-calc(100vh - 93px);
+  height: calc(100vh - 93px); }
 
 .article-main-content {
   width: -moz-calc(100% - 400px);
@@ -1167,7 +1320,7 @@ input.form-address {
 
 .article-tags {
   width: 100%;
-  margin-top: 99px;
+  margin-top: 165px;
   padding: 15px 0 0 0; }
 
 /****************************************************************
@@ -2065,7 +2218,7 @@ input.form-address {
   .element-profile-name i.material-icons {
     width: 20px;
     padding-top: 10px;
-    color: #9898A5;
+    color: #A3A3A3;
     float: right; }
 
 .element-calendar-link {
@@ -2164,7 +2317,7 @@ input.form-address {
   margin: 0 auto;
   margin-top: 50px;
   position: relative;
-  box-shadow: 0px 0px 2px #9898A5; }
+  box-shadow: 0px 0px 2px #A3A3A3; }
   @media (max-width: 1100px) {
     .element-content-box-two {
       width: 55%; } }
@@ -2253,7 +2406,7 @@ input.form-address {
     color: #404040; }
   .element-information-title-one i.material-icons {
     float: right;
-    color: #9898A5; }
+    color: #A3A3A3; }
 
 .element-information-item-one {
   width: 100%;
@@ -2273,7 +2426,7 @@ input.form-address {
     float: left;
     display: block; }
     .element-information-item-one span i {
-      color: #9898A5; }
+      color: #A3A3A3; }
 
 .element-text-box {
   padding: 15px 25px 0 25px; }
@@ -2328,7 +2481,7 @@ input.form-address {
   .element-percentage .type-super-small {
     padding: 0;
     margin-top: 13px;
-    color: #9898A5;
+    color: #A3A3A3;
     display: block;
     float: right; }
   @media (max-width: 835px) {
@@ -2399,19 +2552,16 @@ input.form-address {
   display: block;
   width: 50%;
   float: left;
-  border-top: 1px solid rgba(30, 49, 100, 0.1);
   border-bottom: 1px solid rgba(30, 49, 100, 0.1);
-  border-right: 1px solid rgba(30, 49, 100, 0.1);
   box-sizing: border-box;
-  padding: 18px 0 20px 0;
-  cursor: pointer; }
+  padding: 24px 0 20px 0;
+  cursor: pointer;
+  border-right: 1px solid rgba(30, 49, 100, 0.1); }
   .element-category-button h5 {
     text-align: center;
-    color: #9898A5;
+    color: #404040;
     font-size: 15px;
     font-family: "TransportNewLight", sans-serif, 300; }
-  .element-category-button:nth-child(odd) {
-    border-right: none; }
   .element-category-button:hover {
     background: rgba(30, 49, 100, 0.03); }
   .element-category-button.element-category-button-active {
@@ -2444,7 +2594,7 @@ input.form-address {
   cursor: pointer; }
   .element-category-title h5 {
     float: left;
-    color: #9898A5;
+    color: #404040;
     margin: 0;
     font-size: 15px;
     padding: 0;
@@ -2452,7 +2602,7 @@ input.form-address {
   .element-category-title i {
     float: right;
     display: block;
-    color: #9898A5; }
+    color: #069CD9; }
 
 .element-category-item {
   display: none; }
@@ -2474,10 +2624,10 @@ input.form-address {
   display: inline-block;
   background: #fff;
   font-size: 1em;
-  padding: 7px 8px 4px 8px;
+  padding: 7px 8px 6px 8px;
   font-size: 13px;
   cursor: pointer;
-  box-shadow: 0px 0px 1px #b3b3bd;
+  box-shadow: 0px 0px 1px #bdbdbd;
   margin-right: 15px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -2491,9 +2641,13 @@ input.form-address {
     margin-right: 0;
     padding: 0;
     margin: 0;
-    color: #9898A5; }
+    float: right;
+    margin-top: 10px;
+    margin-left: 12px;
+    color: #A3A3A3; }
   .element-tag span {
-    padding-top: 5px;
+    padding-top: 2px;
+    float: left;
     color: #404040; }
   .element-tag:hover i {
     color: #404040; }
@@ -2603,6 +2757,23 @@ input.form-address {
   @media (max-width: 500px) {
     .beyond-waypoint .header-type-three {
       top: 33px; } }
+
+.header-type-two {
+  position: fixed;
+  top: 33px;
+  padding: 15px 0 20px 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  background: #069CD9; }
+  .header-type-two h2 {
+    padding-left: 25px;
+    color: #fff; }
+  .header-type-two i {
+    margin-top: 3px;
+    margin-right: 20px;
+    float: left; }
 
 .swiper-container {
   margin: 0 auto;

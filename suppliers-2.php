@@ -23,31 +23,29 @@
 
   <?php include 'includes/top-message.php';?>
 
+  <?php include 'includes/sidebar.php';?>
+
+  <header class="header-type-two">
+
+    <div class="layout-container">
+
+      <li><a href="#" class="link-icon-type js-trigger-sidebar"><i class="material-icons md-18">menu</i></a></li>
+
+      <h2 class="type-light">Suppliers</h2>
+
+    </div>
+
+  </header>
+
   <article class="article-left-pane">
 
-    <div class="element-left-pane-title">
-
-      <div class="layout-container">
-
-        <ul class="element-top-options-left">
-
-          <li><a href="#" class="link-icon-type js-trigger-sidebar"><i class="material-icons md-18">menu</i></a></li>
-
-        </ul> <!-- element-top-options-left -->
-
-        <h1 class="type-style-heading">Suppliers</h1>
-
-      </div> <!-- layout-container -->
-
-    </div>  <!-- element-article-title -->
-
-    <div class="element-category-button js-trigger-category-slider-one element-category-button-active">
+    <div class="element-category-button element-category-button-active">
 
       <h5>Service Type</h5>
 
     </div> <!-- element-filter-button -->
 
-    <div class="element-category-button js-trigger-category-slider-two">
+    <div class="element-category-button">
 
       <h5>Filter Options</h5>
 
@@ -284,45 +282,40 @@
 
       <article class="article-suppliers-list">
 
-        <ul class="list-style-five">
+          <table>
 
-          <li>
+            <thead>
 
-            <div class="element-initial-avatar">
+              <td>Title</td>
 
-              <h3 class="type-initial">AB</h3>
+              <td>Service</td>
 
-            </div>
+              <td>Service</td>
 
-            <div class="list-large-content">
+            </thead>
 
-              <div class="list-large-column">
+            <tr>
 
-                <h3>Ace Bar Events</h3>
+              <td>Ace Bar Events</td>
 
-                <span>Print, Design, other, init</span>
+              <td>Bar Services</td>
 
-              </div>
+              <td>Service</td>
 
-              <div class="list-large-column">
+            </trow>
 
-                <span><a href="mailto:info@acebarevents.co">info@acebarevents.co</a></span>
+             <tr>
 
-                <span><a href="tel:01484 599333">01484 599333</a></span>
+              <td>Ace Bar Events</td>
 
-              </div>
+              <td>Bar Services</td>
 
-              <div class="list-large-column">
+              <td>Service</td>
 
-                <span>NDA Signed</span>
+            </tr>
 
-              </div>
+          </table>
 
-            </div>
-
-          </li>
-
-        </ul>
 
       </article>
 

@@ -42,15 +42,14 @@ body:after {
 }
 
 body {
-  font-family: $main_font;
-  font-weight: 200;
+  font-family: $mainFont;
   font-style:normal;
-  background: $colour-background;
+  background: $colourBackground;
   margin: 0 !important;
   padding: 0;
 
   &.base-background-one {
-    background: $colour-background;
+    background: $colourBackground;
   }
 }
 
@@ -61,13 +60,13 @@ iframe {
 }
 
 ::-moz-selection {
-  background: $colour_one;
+  background: $colourOne;
   color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: $colour_one;
+  background: $colourOne;
   color: #fff;
   text-shadow: none;
 }

@@ -17,7 +17,7 @@
   overflow: hidden;
   width: 20%;
   @include transform(translateX(-100%));
-  background: $colour_background_dark;
+  background: $colourBackgroundDark;
   @include transition(all, 0.3s, ease-in-out);
 
   .sidebar-trigger-active & {
@@ -62,50 +62,5 @@
     }
     
   }
-
-}
-
-.layout-span-one {
-
-}
-
-.layout-span-two {
-
-}
-
-.layout-span-three {
-
-}
-
-.layout-span-four {
-
-}
-
-.layout-span-five {
-
-}
-
-.layout-span-six {
-
-}
-
-.layout-shift-one {
-}
-
-.layout-shift-two {
-}
-
-.layout-shift-three {
-
-}
-
-.layout-shift-four {
-
-}
-
-.layout-shift-five {
-}
-
-.layout-shift-six {
 
 }
