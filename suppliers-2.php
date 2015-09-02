@@ -19,443 +19,445 @@
 
 </head>
 
-<body class="sidebar-trigger-active">
+<body>
 
   <?php include 'includes/top-message.php';?>
 
   <?php include 'includes/sidebar.php';?>
 
-  <header class="header-type-two">
+  <div class="layout-content-container">
 
-    <div class="layout-container">
+    <header class="header-type-two">
 
-      <a href="#" class="js-trigger-sidebar"><i class="material-icons md-18">menu</i></a>
+      <div class="layout-container">
 
-      <h3 class="type-light">Suppliers</h3>
+        <a href="#" class="js-trigger-sidebar"><i class="material-icons md-18">menu</i></a>
 
-      <ul class="element-top-options-right">
+        <h3 class="type-light">Suppliers</h3>
 
-        <li><a class="js-trigger-notifications" title="js-add-supplier"><i class="material-icons link-arrow-bottom-active">add</i></a></li>
+        <ul class="element-top-options-right">
 
-        <li>
+          <li><a class="js-trigger-notifications" title="js-add-supplier"><i class="material-icons link-arrow-bottom-active">add</i></a></li>
 
-          <a class="js-trigger-notifications" title="js-notifications">
+          <li>
 
-            <i class="material-icons link-arrow-bottom-active">flag</i>
+            <a class="js-trigger-notifications" title="js-notifications">
 
-            <span class="element-notification">2</span>
+              <i class="material-icons link-arrow-bottom-active">flag</i>
 
-          </a>
+              <span class="element-notification">2</span>
 
-        </li>
+            </a> <!-- js-trigger-notifications -->
 
-      </ul>
+          </li> 
 
-    </div>
+        </ul>  <!-- element-top-options-right -->
 
-  </header>
+      </div> <!-- layout-container -->
 
-  <div class="article-notification-box" id="js-notifications">
+    </header> <!-- header-type-two -->
 
-    <h5 class="type-light">Notifications</h5>
+    <div class="article-notification-box" id="js-notifications">
 
-    <ul class="list-style-six">
+      <h5 class="type-light">Notifications</h5>
 
-      <a><li><span>Dave Clayton has completed stage one of the suppliers Sign Up Process</span><span class="type-bold"> Review Details</span></li></a>
+      <ul class="list-style-six">
 
-      <a><li><span>Dave Clayton has completed stage one of the suppliers Sign Up Process</span><span class="type-bold"> Review Details</span></li></a>
+        <a><li><span>Dave Clayton has completed stage one of the suppliers Sign Up Process</span><span class="type-bold"> Review Details</span></li></a>
 
-      <a><li><span>View All</span></li></a>
+        <a><li><span>Dave Clayton has completed stage one of the suppliers Sign Up Process</span><span class="type-bold"> Review Details</span></li></a>
 
-    </ul>
+        <a><li><span>View All</span></li></a>
 
-  </div>
+      </ul> <!-- list-style-six -->
 
-  <div class="article-notification-box" id="js-add-supplier">
+    </div> <!-- article-notification-box -->
 
-    <h5 class="type-light">Add Suppliers</h5>
+    <div class="article-notification-box" id="js-add-supplier">
 
-      <p>Send your personal link to your potential supplier so they can sign the NDA.</p>
+      <h5 class="type-light">Add Suppliers</h5>
 
-      <span class="element-link-box">https://intranet.wassermanexperience.com/suppliers/register/myemail.co.uk</span>
+        <p>Send your personal link to your potential supplier so they can sign the NDA.</p>
 
-      <a class="link-style-white"><i class="material-icons md-18">content_paste</i>Copy To Clipboard</a>
+        <span class="element-link-box">https://intranet.wassermanexperience.com/suppliers/register/myemail.co.uk</span>
 
-  </div>
+        <a class="link-style-white"><i class="material-icons md-18">content_paste</i>Copy To Clipboard</a>
 
-  <article class="article-left-pane">
+    </div> <!-- article-notification-box -->
 
-    <div class="element-category-button element-category-button-active">
+    <article class="article-left-pane">
 
-      <h5>Service Type</h5>
+      <div class="element-category-button element-category-button-active">
 
-    </div> 
+        <h5>Service Type</h5>
 
-    <div class="element-category-button">
+      </div> <!-- element-category-button -->
 
-      <h5>Filter Options</h5>
+      <div class="element-category-button">
 
-    </div> 
+        <h5>Filter Options</h5>
 
-    <div class="element-category-slider-holder">
+      </div> <!-- element-category-button -->
 
-      <div class="element-category-slider element-panel-one">
+      <div class="element-category-slider-holder">
 
-        <ul class="list-style-three">
+        <div class="element-category-slider element-panel-one">
 
-          <li class="list-three-item js-trigger-panel-two" title="list-item-one">
+          <ul class="list-style-three">
 
-            <h5>Event Services and Infrastructure</h5>
+            <li class="list-three-item js-trigger-panel-two" title="list-item-one">
 
-            <i class="material-icons link-icons-white md-18">keyboard_arrow_right</i>
+              <h5>Event Services and Infrastructure</h5>
 
-          </li>
+              <i class="material-icons link-icons-white md-18">keyboard_arrow_right</i>
 
-          <li class="list-three-item js-trigger-panel-two" title="list-item-two">
+            </li> <!-- list-three-item -->
 
-            <h5>Event Technology</h5>
+            <li class="list-three-item js-trigger-panel-two" title="list-item-two">
 
-            <i class="material-icons link-icons-white md-18">keyboard_arrow_right</i>
+              <h5>Event Technology</h5>
 
-          </li>
+              <i class="material-icons link-icons-white md-18">keyboard_arrow_right</i>
 
-          <li class="list-three-item js-trigger-panel-two" title="list-item-three">
+            </li> <!-- list-three-item -->
 
-            <h5>Event Staff</h5>
+            <li class="list-three-item js-trigger-panel-two" title="list-item-three">
 
-            <i class="material-icons link-icons-white md-18">keyboard_arrow_right</i>
+              <h5>Event Staff</h5>
 
-          </li>
+              <i class="material-icons link-icons-white md-18">keyboard_arrow_right</i>
 
-          <li class="list-three-item js-trigger-panel-two" title="list-item-four">
+            </li> <!-- list-three-item -->
 
-            <h5>Digital</h5>
+            <li class="list-three-item js-trigger-panel-two" title="list-item-four">
 
-            <i class="material-icons link-icons-white md-18">keyboard_arrow_right</i>
+              <h5>Digital</h5>
 
-          </li>
+              <i class="material-icons link-icons-white md-18">keyboard_arrow_right</i>
 
-          <li class="list-three-item js-trigger-panel-two" title="list-item-five">
+            </li> <!-- list-three-item -->
 
-            <h5>Venues</h5>
+            <li class="list-three-item js-trigger-panel-two" title="list-item-five">
 
-            <i class="material-icons link-icons-white md-18">keyboard_arrow_right</i>
+              <h5>Venues</h5>
 
-          </li>
+              <i class="material-icons link-icons-white md-18">keyboard_arrow_right</i>
 
-        </ul>
+            </li> <!-- list-three-item -->
 
-      </div>
+          </ul> <!-- list-style-three -->
 
-      <div class="element-category-slider element-panel-two">
+        </div> <!-- element-category-slider -->
 
-        <div class="element-category-item" id="list-item-one">
+        <div class="element-category-slider element-panel-two">
 
-          <div class="element-category-title js-trigger-panel-one">
+          <div class="element-category-item" id="list-item-one">
 
-             <h5>Event Services and Infrastructure</h5>
+            <div class="element-category-title js-trigger-panel-one">
 
-            <i class="material-icons link-icons-white md-18">keyboard_arrow_left</i>
+               <h5>Event Services and Infrastructure</h5>
 
-          </div>
+              <i class="material-icons link-icons-white md-18">keyboard_arrow_left</i>
 
-          <ul class="list-style-four">
+            </div> <!-- element-category-title -->
 
-              <li class="form-radio-button-active">
+              <ul class="list-style-four">
 
-                <span class="form-radio-button"></span>
+                <li class="form-radio-button-active">
 
-                <span class="type-style-one">Portacabins / Steel Stores</span>
+                  <span class="form-radio-button"></span>
 
-              </li>
+                  <span class="type-style-one">Portacabins / Steel Stores</span>
 
-              <li>
+                </li>
 
-                <span class="form-radio-button"></span>
+                <li>
 
-                <span class="type-style-one">Portacabins / Steel Stores</span>
+                  <span class="form-radio-button"></span>
 
-              </li>
+                  <span class="type-style-one">Portacabins / Steel Stores</span>
 
-               <li>
+                </li>
 
-                <span class="form-radio-button"></span>
+                 <li>
 
-                <span class="type-style-one">Portacabins</span>
+                  <span class="form-radio-button"></span>
 
-              </li>
+                  <span class="type-style-one">Portacabins</span>
 
-               <li>
+                </li>
 
-                <span class="form-radio-button"></span>
+                 <li>
 
-                <span class="type-style-one">Portacabins</span>
+                  <span class="form-radio-button"></span>
 
-              </li>
+                  <span class="type-style-one">Portacabins</span>
 
-              <li>
+                </li>
 
-                <span class="form-radio-button"></span>
+                <li>
 
-                <span class="type-style-one">Portacabins</span>
+                  <span class="form-radio-button"></span>
 
-              </li>
+                  <span class="type-style-one">Portacabins</span>
 
-              <li>
+                </li>
 
-                <span class="form-radio-button"></span>
+                <li>
 
-                <span class="type-style-one">Portacabins</span>
+                  <span class="form-radio-button"></span>
 
-              </li>
+                  <span class="type-style-one">Portacabins</span>
+
+                </li>
+                
+                <li>
+
+                  <span class="form-radio-button"></span>
+
+                  <span class="type-style-one">Portacabins</span>
+
+                </li>
               
-              <li>
+              </ul> <!-- list-style-four -->
 
-                <span class="form-radio-button"></span>
+          </div> <!-- element-category-item -->
 
-                <span class="type-style-one">Portacabins</span>
+          <div class="element-category-item" id="list-item-two">
 
-              </li>
+            <div class="element-category-title js-trigger-panel-one">
 
+               <h5>Event Technology</h5>
 
-          </ul>
+              <i class="material-icons link-icons-white md-18">keyboard_arrow_left</i>
 
-        </div>
+            </div> <!-- element-category-title -->
 
-        <div class="element-category-item" id="list-item-two">
+          </div> <!-- element-category-item -->
 
-          <div class="element-category-title js-trigger-panel-one">
+          <div class="element-category-item" id="list-item-three">
 
-             <h5>Event Technology</h5>
+            <div class="element-category-title js-trigger-panel-one">
 
-            <i class="material-icons link-icons-white md-18">keyboard_arrow_left</i>
+               <h5>Event Staff</h5>
 
-          </div>
+              <i class="material-icons link-icons-white md-18">keyboard_arrow_left</i>
 
-        </div>
+            </div> <!-- element-category-title -->
 
-        <div class="element-category-item" id="list-item-three">
+          </div> <!-- element-category-item -->
 
-          <div class="element-category-title js-trigger-panel-one">
+          <div class="element-category-item" id="list-item-four">
 
-             <h5>Event Staff</h5>
+            <div class="element-category-title js-trigger-panel-one">
 
-            <i class="material-icons link-icons-white md-18">keyboard_arrow_left</i>
+               <h5>Digital</h5>
 
-          </div>
+              <i class="material-icons link-icons-white md-18">keyboard_arrow_left</i>
 
-        </div>
+            </div> <!-- element-category-title -->
 
-        <div class="element-category-item" id="list-item-four">
+          </div> <!-- element-category-item -->
 
-          <div class="element-category-title js-trigger-panel-one">
+          <div class="element-category-item" id="list-item-five">
 
-             <h5>Digital</h5>
+            <div class="element-category-title js-trigger-panel-one">
 
-            <i class="material-icons link-icons-white md-18">keyboard_arrow_left</i>
+               <h5>Venues</h5>
 
-          </div>
+              <i class="material-icons link-icons-white md-18">keyboard_arrow_left</i>
 
-        </div>
+            </div> <!-- element-category-title -->
 
-        <div class="element-category-item" id="list-item-five">
+          </div> <!-- element-category-item -->
+          
+        </div> <!-- element-category-slider -->
 
-          <div class="element-category-title js-trigger-panel-one">
+      </div>  <!-- element-category-slider-holder -->
+ 
+    </article> <!-- article-filter -->
 
-             <h5>Venues</h5>
+    <article class="article-main-content">
 
-            <i class="material-icons link-icons-white md-18">keyboard_arrow_left</i>
+        <section class="article-search">
 
-          </div>
+          <div class="layout-container">
 
-        </div>
-        
-      </div>
+            <form class="form-search">
 
-    </div>
+              <i class="material-icons md-18">search</i>
 
-  </article> <!-- article-filter -->
+              <input type="search" placeholder=Search>
 
-  <article class="article-main-content">
+            </form>  <!-- form-search -->
 
-      <section class="article-search">
+          </div> <!-- layout-container -->
 
-        <div class="layout-container">
+        </section>  <!-- article-search -->
 
-          <form class="form-search">
+        <section class="article-tags">
 
-            <i class="material-icons md-18">search</i>
+          <div class="layout-container">
 
-            <input type="search" placeholder=Search>
+            <div class="element-tag">
 
-          </form>  <!-- form-search -->
+              <span>Portacabins / Steel Stores</span>
 
-        </div> <!-- layout-container -->
+              <i class="material-icons link-icons-white md-18">clear</i>
 
-      </section>  <!-- article-search -->
+            </div> <!-- element-tag -->
 
-      <section class="article-tags">
+            <div class="element-tag">
 
-        <div class="layout-container">
+              <span>Steel Stores</span>
 
-          <div class="element-tag">
+              <i class="material-icons link-icons-white md-18">clear</i>
 
-            <span>Portacabins / Steel Stores</span>
+            </div> <!-- element-tag -->
 
-            <i class="material-icons link-icons-white md-18">clear</i>
+            <div class="element-tag">
 
-          </div>
+              <span>Portacabins</span>
 
-          <div class="element-tag">
+              <i class="material-icons link-icons-white md-18">clear</i>
 
-            <span>Steel Stores</span>
+            </div>  <!-- element-tag -->
 
-            <i class="material-icons link-icons-white md-18">clear</i>
+          </div> <!-- layout-container -->
 
-          </div>
+        </section> <!-- article-tags -->
 
-          <div class="element-tag">
+        <article class="article-suppliers-list">
 
-            <span>Portacabins</span>
+            <table>
 
-            <i class="material-icons link-icons-white md-18">clear</i>
+              <thead>
 
-          </div>
+                <td>Title</td>
 
-        </div>
+                <td>Service</td>
 
-      </section>
+                <td>Service</td>
 
-      <article class="article-suppliers-list">
+              </thead>
 
-          <table>
+              <tr class="js-table-row-link" data-href="">
 
-            <thead>
+                <td>Ace Bar Events</td>
 
-              <td>Title</td>
+                <td>Bar Services</td>
 
-              <td>Service</td>
+                <td>Service</td>
 
-              <td>Service</td>
+              </tr>
 
-            </thead>
+              <tr class="js-table-row-link" data-href="">
 
-            <tr>
+                <td>Ace Bar Events</td>
 
-              <td>Ace Bar Events</td>
+                <td>Bar Services</td>
 
-              <td>Bar Services</td>
+                <td>Service</td>
 
-              <td>Service</td>
+              </tr>
 
-            </tr>
+              <tr class="js-table-row-link" data-href="">
 
-            <tr>
+                <td>Ace Bar Events</td>
 
-              <td>Ace Bar Events</td>
+                <td>Bar Services</td>
 
-              <td>Bar Services</td>
+                <td>Service</td>
 
-              <td>Service</td>
+              </tr>
 
-            </tr>
+              <tr class="js-table-row-link" data-href="">
 
-            <tr>
+                <td>Ace Bar Events</td>
 
-              <td>Ace Bar Events</td>
+                <td>Bar Services</td>
 
-              <td>Bar Services</td>
+                <td>Service</td>
 
-              <td>Service</td>
+              </tr>
 
-            </tr>
+              <tr class="js-table-row-link" data-href="">
 
-            <tr>
+                <td>Ace Bar Events</td>
 
-              <td>Ace Bar Events</td>
+                <td>Bar Services</td>
 
-              <td>Bar Services</td>
+                <td>Service</td>
 
-              <td>Service</td>
+              </tr>
 
-            </tr>
+              <tr class="js-table-row-link" data-href="">
 
-            <tr>
+                <td>Ace Bar Events</td>
 
-              <td>Ace Bar Events</td>
+                <td>Bar Services</td>
 
-              <td>Bar Services</td>
+                <td>Service</td>
 
-              <td>Service</td>
+              </tr>
 
-            </tr>
+              <tr class="js-table-row-link" data-href="">
 
-            <tr>
+                <td>Ace Bar Events</td>
 
-              <td>Ace Bar Events</td>
+                <td>Bar Services</td>
 
-              <td>Bar Services</td>
+                <td>Service</td>
 
-              <td>Service</td>
+              </tr>
 
-            </tr>
+              <tr class="js-table-row-link" data-href="">
 
-            <tr>
+                <td>Ace Bar Events</td>
 
-              <td>Ace Bar Events</td>
+                <td>Bar Services</td>
 
-              <td>Bar Services</td>
+                <td>Service</td>
 
-              <td>Service</td>
+              </tr>
 
-            </tr>
+              <tr class="js-table-row-link" data-href="">
 
-            <tr>
+                <td>Ace Bar Events</td>
 
-              <td>Ace Bar Events</td>
+                <td>Bar Services</td>
 
-              <td>Bar Services</td>
+                <td>Service</td>
 
-              <td>Service</td>
+              </tr>
 
-            </tr>
+              <tr>
 
-            <tr class="js-table-row-link" data-href=''>
+                <td>Ace Bar Events</td>
 
-              <td>Ace Bar Events</td>
+                <td>Bar Services</td>
 
-              <td>Bar Services</td>
+                <td>Service</td>
 
-              <td>Service</td>
+              </tr>
 
-            </tr>
+              <tr>
 
-            <tr>
+                <td>Ace Bar Events</td>
 
-              <td>Ace Bar Events</td>
+                <td>Bar Services</td>
 
-              <td>Bar Services</td>
+                <td>Service</td>
 
-              <td>Service</td>
+              </tr>
 
-            </tr>
+            </table>
 
-            <tr>
+        </article> <!-- article-suppliers-list -->
 
-              <td>Ace Bar Events</td>
+    </article> <!-- article-main-content -->
 
-              <td>Bar Services</td>
-
-              <td>Service</td>
-
-            </tr>
-
-          </table>
-
-
-      </article>
-
-  </article> <!-- article-main-content -->
+  </div> <!-- layout-content-container -->
 
   <script type="text/javascript" src="MyFontsWebfontsKit.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>

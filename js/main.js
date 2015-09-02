@@ -129,19 +129,4 @@ $(function() {
         return false;
 
         });
-
-	// Make header smaller on scroll
-    $(window).scroll(function(){
-      var scrollTop = $(window).scrollTop();
-
-      if(scrollTop >= 50) {
-          body.addClass('beyond-waypoint');
-      }
-
-      else {
-          body.removeClass('beyond-waypoint');
-      }
-
-    }); // End of scroll
-
 }); // End of document.ready

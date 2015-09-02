@@ -10,8 +10,8 @@
   margin-top: -62px;
   overflow: auto;
   width: 350px;
-  margin-top: 115px;
-  height: 450px;
+  margin-top: 124px;
+  height: 445px;
   background: #fff;
   position: relative;
   box-shadow: 0px 0px 1px $colourDarken;
@@ -33,6 +33,23 @@
     display: block;
     margin-top: 31px;
     @include border-radius(100%);
+  }
+
+  @include mq("small", "max-width") {
+    background: $colourBackground;
+    width: 100%;
+    padding-top: 15px;
+    margin-top: 65px;
+    position: fixed;
+    height: 100vh;
+
+    .element-login-line, .element-login-smile {
+      display: none;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+    }
   }
 
   @include mq("super-small", "max-width") {
@@ -385,6 +402,7 @@
 
   h1 {
     color: #fff;
+    font-size: 2.7em;
     text-align: center;
     vertical-align: middle;
   }
@@ -496,6 +514,16 @@
   .element-dropdown-sub-item {
     padding: 8px 0;
     cursor: pointer;
+
+    span {
+      color: $colourTypeLight;
+      font-family: $mainFontLight;
+      letter-spacing: 0;
+      padding-top: 0;
+      text-transform: initial;
+      line-height: 1.45;
+      font-size: 0.889em;
+    }
   }
 
   @include mq("small", "max-width") {

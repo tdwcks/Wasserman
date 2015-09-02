@@ -90,9 +90,12 @@ a {
 .link-style-three {
 	font-size: 14px;
 	color: $colourTypeLight;
-	padding: 8px 0 0 0;
+	padding: 9px 0 0 0;
 
 	i {
+		padding-top: -10px;
+		display: block;
+		float: left;
 		padding-right: 0;
 	}
 }

@@ -84,11 +84,22 @@ label, input, textarea {
 	box-sizing: border-box;
 }
 
+form {
+	span {
+    color: #FF5B34;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    padding: 15px 0 5px 0;
+  }
+}
+
 label {
 	padding: 15px 0px;
 	font-size: 12px;
 	text-transform: uppercase;
-	color: $colourTypeLight;
+	color: #4D4D4D;
 	letter-spacing: 1px;
 	display: block;
 	font-family: $mainFontLight;
@@ -96,11 +107,11 @@ label {
 
 input {
 	@include border-radius(0px);
-	padding: 8px 15px;
+	padding: 12px 15px;
 	 -webkit-appearance: none;
 	font-size: 14px;
 	font-family: $mainFontLight;
-	color: $colourTypeLight;
+	color: #4D4D4D;
 	width: 100%;
 	border: 1px solid $colourLines;
 
@@ -194,6 +205,13 @@ label[for='logged_in'] {
 	padding: 5px 0 0 5px;
 	width: 100px;
 	display: block;
+
+	@include mq("small", "max-width") {
+		display: inline;
+		width: auto;
+		margin-left: 5px;
+		margin-top: 8px;
+	}	
 }
 
 input.form-address {

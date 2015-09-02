@@ -8,7 +8,7 @@
   position: fixed;
   top: 33px;
   width: 100%;
-  height: 29px;
+  height: 150px;
   padding: 18px 0;
   background: $colourOne;
   @include transition(all, 0.3s, ease-in-out);
@@ -17,9 +17,10 @@
     float: left;
   }
 
-  h1.type-style-heading {
-      padding: 0px 0 0 0px;
-      font-size: 20px;
+  h1  {
+      font-size: 1.266em;
+      font-family: $mainFont;
+      padding: 120px 0 0 24px;
       color: #fff;
       clear: none;
       float: left;
@@ -54,22 +55,7 @@
     }
 
     h1.type-style-heading {
-      clear: none;
-      font-family: $mainFontLight;
-      font-size: 20px;
-      float: left;
-      padding: 0px 0 0 10px;
-
-      .beyond-waypoint & {
-        padding: 0px 0 0 10px;
-      }
-    }
-  }
-
-   @include mq("super-small", "max-width") {
-
-    .beyond-waypoint & {
-      top: 33px;
+      padding: 0px 0 0 24px;
     }
   }
 }
