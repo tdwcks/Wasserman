@@ -45,6 +45,8 @@
 
       <div class="element-login-smile">
 
+        <span>Tw</span>
+
       </div> <!-- element-login-smile -->
 
       <div class="form-top">

@@ -33,6 +33,20 @@
     display: block;
     margin-top: 31px;
     @include border-radius(100%);
+
+
+    span {
+      font-size: 1.266em;
+      color: #fff;
+      font-family: $mainFont;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+      display: block;
+      padding-top: 18px;
+      letter-spacing: 1px;
+      vertical-align: center;
+    }
   }
 
   @include mq("small", "max-width") {

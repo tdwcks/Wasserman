@@ -2342,6 +2342,17 @@ input.form-address {
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
     border-radius: 100%; }
+    .element-login-form .element-login-smile span {
+      font-size: 1.266em;
+      color: #fff;
+      font-family: "TransportNewMedium", sans-serif, 400;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+      display: block;
+      padding-top: 18px;
+      letter-spacing: 1px;
+      vertical-align: center; }
   @media (max-width: 835px) {
     .element-login-form {
       background: #F2F5F7;
