@@ -11,6 +11,10 @@ a {
 	cursor: pointer;
 }
 
+.material-icons {
+	position: relative;
+}
+
 .link-block {
 	display: block;
 }
@@ -180,6 +184,22 @@ a {
 	text-align: center;
 	color: $colourOne;
 	font-family: $mainFontLight;
+}
+
+.link-arrow-bottom-active:after {
+	content: "";
+	display: none;
+	position: absolute;
+	width: 0; 
+	height: 0; 
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	border-bottom: 11px solid #1976D2;
+	top: 37px;
+
+	.js-notification-active & {
+		display: block;
+	}
 }
 
 .link-dd-one {

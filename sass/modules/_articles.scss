@@ -16,19 +16,18 @@
       float: left;
       height: 33px;
       box-sizing: border-box;
-      display:  table-cell;
-      vertical-align: middle;
+      display:  inline;
       text-align: center;
       background: $colourOne;
       color: #fff;
-      font-size: 12px;
       padding: 8px 0 0 0;
       text-transform: uppercase;
       letter-spacing: 1px;
+      font-size: 0.889em;
   }
 
   span {
-    @include calc(width, "50% - 0px");
+    @include calc(width, "70% - 0px");
     padding: 7px 15px;
     float: left;
     display: block;
@@ -40,9 +39,9 @@
     padding: 9px 24px;
   }
 
-  @include mq("extra-small", "max-width") {
+  @include mq("small", "max-width") {
 
-    .type-superscript {
+    span {
       display: none;
     }
   }
@@ -87,10 +86,16 @@
   background: #fff;
   border-bottom: $lines;
   width: 100%;
-  margin-top: 99px;
+  margin-top: 104px;
+  border-left: $lines;
   padding: 0 0 8px 0;
   height: auto;
   overflow: auto;
+
+  @include mq("medium", "max-width") {
+    margin-top: 34px;
+    position: relative;
+  }
 }
 
 .article-key-information {
@@ -161,16 +166,85 @@
   float: left;
   margin-top: 69px;
   @include calc(height, "100vh - 93px");
+
+  @include mq("medium", "max-width") {
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    position: relative;
+  }
 }
 
 .article-main-content {
   @include calc(width, "100% - 400px");
   @include calc(height, "100vh - 33px");
   float: right;
+
+  @include mq("medium", "max-width") {
+    width: 100%;
+  }
 }
 
 .article-tags {
   width: 100%;
-  margin-top: 165px;
+  margin-top: 175px;
   padding: 15px 0 0 0;
+
+  @include mq("medium", "max-width") {
+    margin-top: 20px;
+  }
+}
+
+.article-notification-box {
+  display: none;
+  z-index: 99;
+  width: 350px;
+  height: auto;
+  overflow: auto;
+  position: relative;
+  box-sizing: border-box;
+  position: fixed;
+  top: 103px;
+  right: 0;
+  background: $colourOneMed;
+
+  p, span a {
+    color: #fff;
+  }
+
+  p {
+    padding: 0 15px;
+  }
+
+  span.link-box {
+    margin: 15px;
+    background: $colourOne;
+  }
+
+  h5 {
+    width: 100%;
+    background: #1976D2;
+    padding: 12px 15px 8px 15px;
+    color: #fff;
+  }
+
+  &.js-notification-active {
+    display: block;
+  }
+
+  .link-style-white {
+    color: #fff;
+    font-size: 0.889em;
+    margin: 0px 0 15px 15px;
+
+    i.material-icons {
+      padding-top: 3px;
+      font-size: 1.1em;
+      margin-right: 10px;
+    }
+  }
+
+  @include mq("medium", "max-width") {
+    width: 100%;
+  }
 }

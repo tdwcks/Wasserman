@@ -29,13 +29,59 @@
 
     <div class="layout-container">
 
-      <li><a href="#" class="link-icon-type js-trigger-sidebar"><i class="material-icons md-18">menu</i></a></li>
+      <a href="#" class="js-trigger-sidebar"><i class="material-icons md-18">menu</i></a>
 
-      <h2 class="type-light">Suppliers</h2>
+      <h3 class="type-light">Suppliers</h3>
+
+      <ul class="element-top-options-right">
+
+        <li><a class="js-trigger-notifications" title="js-add-supplier"><i class="material-icons link-arrow-bottom-active">add</i></a></li>
+
+        <li>
+
+          <a class="js-trigger-notifications" title="js-notifications">
+
+            <i class="material-icons link-arrow-bottom-active">flag</i>
+
+            <span class="element-notification">2</span>
+
+          </a>
+
+        </li>
+
+      </ul>
 
     </div>
 
   </header>
+
+  <div class="article-notification-box" id="js-notifications">
+
+    <h5 class="type-light">Notifications</h5>
+
+    <ul class="list-style-six">
+
+      <a><li><span>Dave Clayton has completed stage one of the suppliers Sign Up Process</span><span class="type-bold"> Review Details</span></li></a>
+
+      <a><li><span>Dave Clayton has completed stage one of the suppliers Sign Up Process</span><span class="type-bold"> Review Details</span></li></a>
+
+      <a><li><span>View All</span></li></a>
+
+    </ul>
+
+  </div>
+
+  <div class="article-notification-box" id="js-add-supplier">
+
+    <h5 class="type-light">Add Suppliers</h5>
+
+      <p>Send your personal link to your potential supplier so they can sign the NDA.</p>
+
+      <span class="element-link-box">https://intranet.wassermanexperience.com/suppliers/register/myemail.co.uk</span>
+
+      <a class="link-style-white"><i class="material-icons md-18">content_paste</i>Copy To Clipboard</a>
+
+  </div>
 
   <article class="article-left-pane">
 
@@ -43,13 +89,13 @@
 
       <h5>Service Type</h5>
 
-    </div> <!-- element-filter-button -->
+    </div> 
 
     <div class="element-category-button">
 
       <h5>Filter Options</h5>
 
-    </div> <!-- element-filter-button -->
+    </div> 
 
     <div class="element-category-slider-holder">
 
@@ -262,7 +308,7 @@
 
           <div class="element-tag">
 
-            <span>Portacabins / Steel Stores</span>
+            <span>Steel Stores</span>
 
             <i class="material-icons link-icons-white md-18">clear</i>
 
@@ -270,7 +316,7 @@
 
           <div class="element-tag">
 
-            <span>Portacabins / Steel Stores</span>
+            <span>Portacabins</span>
 
             <i class="material-icons link-icons-white md-18">clear</i>
 
@@ -302,9 +348,99 @@
 
               <td>Service</td>
 
-            </trow>
+            </tr>
 
-             <tr>
+            <tr>
+
+              <td>Ace Bar Events</td>
+
+              <td>Bar Services</td>
+
+              <td>Service</td>
+
+            </tr>
+
+            <tr>
+
+              <td>Ace Bar Events</td>
+
+              <td>Bar Services</td>
+
+              <td>Service</td>
+
+            </tr>
+
+            <tr>
+
+              <td>Ace Bar Events</td>
+
+              <td>Bar Services</td>
+
+              <td>Service</td>
+
+            </tr>
+
+            <tr>
+
+              <td>Ace Bar Events</td>
+
+              <td>Bar Services</td>
+
+              <td>Service</td>
+
+            </tr>
+
+            <tr>
+
+              <td>Ace Bar Events</td>
+
+              <td>Bar Services</td>
+
+              <td>Service</td>
+
+            </tr>
+
+            <tr>
+
+              <td>Ace Bar Events</td>
+
+              <td>Bar Services</td>
+
+              <td>Service</td>
+
+            </tr>
+
+            <tr>
+
+              <td>Ace Bar Events</td>
+
+              <td>Bar Services</td>
+
+              <td>Service</td>
+
+            </tr>
+
+            <tr class="js-table-row-link" data-href=''>
+
+              <td>Ace Bar Events</td>
+
+              <td>Bar Services</td>
+
+              <td>Service</td>
+
+            </tr>
+
+            <tr>
+
+              <td>Ace Bar Events</td>
+
+              <td>Bar Services</td>
+
+              <td>Service</td>
+
+            </tr>
+
+            <tr>
 
               <td>Ace Bar Events</td>
 

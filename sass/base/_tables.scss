@@ -5,7 +5,7 @@
 //
 
 table {
-  @include calc(width, "100% - 100px");
+  @include calc(width, "100% - 87px");
   float: right;
   font-size: 0.889em;
   color: $colourType;
@@ -16,9 +16,14 @@ table {
     width: 100%;
     border-bottom: $lines;
 
-    &:before {
-      content: 0;
+    tr:before {
+      content: "";
       background: none;
+    }
+
+    tr td {
+      font-family: $mainFont;
+      padding: 0 0 10px 0;
     }
 
     th {
@@ -33,6 +38,10 @@ table {
     }
 
     &:before {
+      display: none;
+    }
+
+    @include mq("small", "max-width") {
       display: none;
     }
   }
@@ -55,11 +64,52 @@ table {
       width: 40px;
       margin-top: 15px;
       height: 40px; 
-      content: "";
+      content: "AB";
+      color: #fff;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 11px 0 0 0;
+      font-family: $mainFontLight;
       @include border-radius(100%);
-      background: $colourTypeLight;
+      background: darken($colourBackgroundDark, 15%);
       display: block;
       margin-left: -64px;
+      float: left;
+    }
+  }
+
+  @include mq("small", "max-width") {
+    @include calc(width, "100% - 84px");
+
+    tr {
+      display: block;
+      padding: 0;
+      float: left;
+      padding: 18px 0 13px 0;
+    }
+
+    tr td {
+      display: block;
+      padding: 0 0 5px 0;
+    }
+
+    tr td:first-child {
+      width: 100%;
+      font-family: $mainFont;
+      font-size: 1.266em;
+    }
+
+    tr td:last-child {
+      display: none;
+    }
+    
+    tr:first-child {
+      border-top: $lines;
+    }
+
+    tr:before {
+      margin-left: -60px;
+      margin-top: 5px;
     }
   }
 }

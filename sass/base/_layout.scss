@@ -11,6 +11,7 @@
 }
 
 .layout-side-bar {
+  display: none;
   top: 33px;
   position: fixed;
   @include calc(height, "100vh - 33px");

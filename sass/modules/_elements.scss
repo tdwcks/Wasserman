@@ -113,7 +113,7 @@
 }
 
 .element-top-options-right {
-  padding: 0;
+  padding: 0 13px 0 0;
   margin: 0;
   float: right;
 
@@ -121,6 +121,10 @@
     float: left;
     margin-left: 20px;
     width: 20px;
+
+    a {
+      position: relative;
+    }
   }
 }
 
@@ -509,9 +513,13 @@
   float: left;
   border-bottom: $lines;
   box-sizing: border-box;
-  padding: 24px 0 20px 0;
+  padding: 29px 0 20px 0;
   cursor: pointer;
-  border-right: $lines;
+  border-left: $lines;
+
+  &:first-child {
+    border-left: 0px;
+  }
 
   h5 {
     text-align: center;
@@ -539,7 +547,6 @@
   .element-category-slider {
     width: 400px;
     float: left;
-    height: 300px;
   }
 
   .element-panel-two {
@@ -548,6 +555,23 @@
 
   .show-panel-two & {
     margin-left: -400px;
+  }
+
+  @include mq("medium", "max-width") {
+    width: 200%;
+    display: none;
+
+    .is-filter-active & {
+      display: block;
+    }
+
+    .element-category-slider {
+      width: 50%;
+    } 
+
+    .show-panel-two & {
+      margin-left: -100%;
+    }
   }
 }
 
@@ -629,4 +653,32 @@
   &:hover i {
     color: $colourType;
   }
+}
+
+.element-notification {
+  background: $colourOneDark;
+  @include border-radius(20px);
+  display: block;
+  text-align: center;
+  position: absolute;
+  font-size: 0.6em;
+  padding-top: 2px;
+  height: 15px;
+  border: 1px solid $colourOne;
+  width: 17px;
+  top: -4px;
+  right: -4px;
+  color: #fff;
+  z-index: 99;
+}
+
+.element-link-box {
+  @include calc(width, "100% - 30px");
+  box-sizing: border-box;
+  word-wrap: break-word;
+  background: $colourOne;
+  padding: 17px;
+  margin: 15px;
+  color: #fff;
+  display: block;
 }

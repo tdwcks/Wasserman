@@ -228,6 +228,39 @@ ul.list-style-five {
   }
 }
 
+ul.list-style-six {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  li {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    padding: 20px 15px;
+    border-bottom: 1px solid darken($colourOneMed, 4%);
+    position: relative;
+
+    &:hover {
+      background: darken($colourOneMed, 4%);
+    }
+
+    i.material-icons {
+      color: #fff;
+    }
+
+    span {
+      width: 100%;
+      color: #fff;
+    }
+  }
+
+  a:last-child li{
+    padding: 10px 15px 10px 15px;
+    border-bottom: 0;
+  }
+}
+
 
 
 

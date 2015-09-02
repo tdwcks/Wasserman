@@ -77,7 +77,7 @@ $(function() {
 
   });
 
-  // element-category-slider {
+  // element-category-slider 
     
     var TriggerPanelOne = $('.js-trigger-panel-one');
         TriggerPanelTwo = $('.js-trigger-panel-two');
@@ -90,6 +90,33 @@ $(function() {
         $(activeCategory).addClass('element-category-active');
 
         body.addClass('show-panel-two');
+        
+        return false;
+        
+        });
+
+        TriggerPanelOne.click(function(){
+
+           body.removeClass('show-panel-two');
+
+        return false;
+
+        });
+
+  // Notification Tabs 
+
+  var triggerNotification = $('.js-trigger-notifications');
+        
+        triggerNotification.click(function(e){
+
+        event.preventDefault();
+
+        activeNotification = '#' + $(this).attr('title');
+
+        $('.js-trigger-notifications').removeClass('js-notification-active');
+        $('.article-notification-box').removeClass('js-notification-active');
+        $(activeNotification).toggleClass('js-notification-active');
+        $(this).toggleClass('js-notification-active');
         
         return false;
         
