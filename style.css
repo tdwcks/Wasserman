@@ -60,6 +60,9 @@ span {
 .type-colour-one {
   color: #2096F3; }
 
+.hidden {
+  display: none; }
+
 /**
  * @license
  * MyFonts Webfont Build ID 3048796, 2015-06-25T09:06:16-0400
