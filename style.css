@@ -1475,6 +1475,17 @@ input.form-address {
     .article-notification-box {
       width: 100%; } }
 
+.article-supplier-card {
+  width: -moz-calc(100% - 50px);
+  width: -webkit-calc(100% - 50px);
+  width: calc(100% - 50px);
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  overflow: auto;
+  background: #fff;
+  box-sizing: border-box; }
+
 /****************************************************************
  *
  * CSS Percentage Circle
@@ -2880,6 +2891,21 @@ input.form-address {
   margin: 15px;
   color: #fff;
   display: block; }
+
+.element-supplier-header {
+  width: 100%;
+  padding: 24px 24px;
+  overflow: auto;
+  height: auto;
+  box-sizing: border-box; }
+  .element-supplier-header h3 {
+    display: inline; }
+  .element-supplier-header span {
+    display: inline;
+    color: #A3A3A3;
+    padding-left: 25px; }
+  .element-supplier-header .element-supplier-switcher {
+    float: right; }
 
 .header-type-one {
   position: fixed;

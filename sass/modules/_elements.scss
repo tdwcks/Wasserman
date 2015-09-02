@@ -724,3 +724,27 @@
   color: #fff;
   display: block;
 }
+
+.element-supplier-header {
+  width: 100%;
+  padding: 24px 24px;
+  overflow: auto;
+  height: auto;
+  box-sizing: border-box;
+
+  h3 {
+    display: inline;
+  }
+
+  span {
+    display: inline;
+    color: $colourTypeLight;
+    padding-left: 25px;
+  }
+
+  .element-supplier-switcher {
+    float: right;
+  }
+
+
+}

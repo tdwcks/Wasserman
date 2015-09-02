@@ -248,3 +248,13 @@
     width: 100%;
   }
 }
+
+.article-supplier-card {
+  @include calc(width, "100% - 50px");
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  overflow: auto;
+  background: #fff;
+  box-sizing: border-box;
+}

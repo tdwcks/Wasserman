@@ -323,7 +323,7 @@
 
           <div class="element-supplier-header">
 
-            <h3>Miln Ltd</h3>
+            <h3 class="type-light">Miln Ltd</h3>
 
             <span>1 of 17</span>
 
@@ -333,17 +333,177 @@
 
               <i class="material-icons">keyboard_arrow_right</i>
 
-            </div>
+              <i class="material-icons">more_vert</i>
 
-            <div class="element-supplier-basics">
+            </div> <!-- element-supplier-switcher -->
+
+          </div> <!-- element-supplier-header -->
+
+            <div class="element-supplier-description">
 
               <h5>We design digital products which help your organisation do great work. Underpinned by the latest technology and user-centric design our aim is to bring a human touch to the digital world.</h5>
 
             </div>  <!-- element-supplier-basics -->
 
-          </div> <!-- element-supplier-header -->
+            <div class="element-supplier-expand">
 
-        </article>  <!-- article-supplier-card -->
+              <i class="material-icons">check_circle</i>
+
+              <h4>Used Before</h4>
+
+              <span>Comments</span>
+
+              <i class="material-icons">keyboard_arrow_down</i>
+
+            </div> <!-- element-supplier-expand -->
+
+            <div class="element-comment-holder">
+
+              <div class="element-comment">
+
+                <div class="element-comment-bubble">
+
+                  <p>Coming from experience at startups, agencies, and full-time freelance, Alexander’s process is limber and eclectic avenue yeah wooo woo woo.</p>
+
+                </div> <!-- element-comment-bubble -->
+
+                <span>Ed Myhill</span>
+
+                <span>emyhill@wmgllc.com</span>
+
+              </div> <!-- element-comment -->
+
+              <div class="element-comment">
+
+                <div class="element-comment-bubble">
+
+                  <p>Coming from experience at startups, agencies, and full-time freelance, Alexander’s process is limber and eclectic avenue yeah wooo woo woo.</p>
+
+                </div> <!-- element-comment-bubble -->
+
+                <span>Ed Myhill</span>
+
+                <span>emyhill@wmgllc.com</span>
+
+              </div> <!-- element-comment -->
+
+              <div class="element-comment">
+
+                <form>
+
+                  <i class="material-icons md-18">send</i>
+
+                  <input type="search" placeholder=Write your own feedback…>
+
+                </form>
+
+              </div> <!-- element-comment -->
+
+            </div> <!-- element-comment-holder -->
+
+            <div class="element-supplier-basic">
+
+                <ul class="list-style-seven">
+
+                  <span class="element-type-initials">ML</span>
+
+                  <li>
+
+                    <p>7 Northumberland Street </br> Huddersfield </br> West Yorkshire </br> HD1 1RL</p>
+
+                  </li>
+
+                  <li>
+
+                    <p>3 years of trading.</p>
+
+                  </li>
+
+                  <li>
+
+                    <p>Company Registration</p>
+
+                    <p class="type-bold">0184743398</p>
+
+                  </li>
+
+                  <li>
+
+                    <p>NDA Signed 21st Jan, 2012</p>
+
+                  </li>
+
+                  <li>
+
+                    <p>VAT Number</p>
+
+                    <p class="type-bold">0184743398 475483039</p>
+
+                  </li>
+
+                </ul> <!-- list-style-seven -->
+
+                <ul class="list-style-seven">
+
+                  <span class="element-type-initials">JC</span>
+
+                  <li>
+
+                    <h5>James Clare</h5>
+
+                    <h5 class="type-light">Developer</h5>
+
+                  </li>
+
+                  <li>
+
+                    <p>07538 947460</p>
+
+                  </li>
+
+                  <li>
+
+                    <p>james@miln.co</p>
+
+                  </li>
+
+                </ul> <!-- list-style-seven -->
+
+                <ul class="list-style-seven">
+
+                  <span class="element-type-initials">TW</span>
+
+                  <li>
+
+                    <h5>Tom Wicks</h5>
+
+                    <h5 class="type-light">Designer</h5>
+
+                  </li>
+
+                  <li>
+
+                    <p>07538 947460</p>
+
+                  </li>
+
+                  <li>
+
+                    <p>tom@miln.co</p>
+
+                  </li>
+
+                  <li>
+
+                    <a href=""><i class="material-icons">add</i>Add New Contact</a>
+
+                  </li>
+
+                </ul> <!-- list-style-seven -->
+
+            </div> <!-- element-supplier-basic -->
+
+        </article> <!-- element-comment-holder -->
 
     </article> <!-- article-main-content -->
 
