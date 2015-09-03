@@ -126,10 +126,25 @@ a {
 
 .link-style-six {
 	box-sizing: border-box;
-	padding: 25px 15px;
+	padding: 33px 27% 12px 27%;
+	margin: 0;
 	display: block;
 	height: auto;
 	overflow: auto;
+	color: $colourTypeLight;
+
+	span {
+		color: $colourTypeLight;
+		float: right;
+		vertical-align: 5px;
+		display: inline-block;
+	}
+
+	.material-icons {
+		padding-top: -5px;
+		vertical-align: -5px;
+		display: inline-block;
+	}
 }
 
 .link-style-white {
@@ -195,6 +210,15 @@ a {
 	text-align: center;
 	color: $colourOne;
 	font-family: $mainFontLight;
+}
+
+.link-button-two {
+	border: 1px solid $colourOne;
+	@include border-radius(2px);
+	padding: 5px 10px;
+	font-size: 12px;
+	font-family: $mainFontLight;
+	vertical-align: 8px;
 }
 
 .link-arrow-bottom-active:after {

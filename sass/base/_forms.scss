@@ -228,6 +228,12 @@ input[type='checkbox'] {
 	-webkit-appearance:checkbox;
 }
 
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus{
+border:none;
+outline:none;
+}
+
 label[for='logged_in'] {
 	float: left;
 	padding: 5px 0 0 5px;

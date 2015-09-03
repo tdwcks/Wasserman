@@ -609,10 +609,21 @@ a {
 
 .link-style-six {
   box-sizing: border-box;
-  padding: 25px 15px;
+  padding: 33px 27% 12px 27%;
+  margin: 0;
   display: block;
   height: auto;
-  overflow: auto; }
+  overflow: auto;
+  color: #A3A3A3; }
+  .link-style-six span {
+    color: #A3A3A3;
+    float: right;
+    vertical-align: 5px;
+    display: inline-block; }
+  .link-style-six .material-icons {
+    padding-top: -5px;
+    vertical-align: -5px;
+    display: inline-block; }
 
 .link-style-white {
   color: #fff;
@@ -667,6 +678,18 @@ a {
   text-align: center;
   color: #2096F3;
   font-family: "TransportNewLight", sans-serif, 300; }
+
+.link-button-two {
+  border: 1px solid #2096F3;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-family: "TransportNewLight", sans-serif, 300;
+  vertical-align: 8px; }
 
 .link-arrow-bottom-active:after {
   content: "";
@@ -1001,7 +1024,8 @@ ul.list-style-six {
     width: 100%;
     padding: 20px 15px;
     border-bottom: 1px solid #197dd6;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     ul.list-style-six li:hover {
       background: #197dd6; }
     ul.list-style-six li i.material-icons {
@@ -1313,6 +1337,11 @@ input[type='checkbox'] {
   height: 20px;
   -webkit-appearance: checkbox; }
 
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus {
+  border: none;
+  outline: none; }
+
 label[for='logged_in'] {
   float: left;
   padding: 5px 0 0 5px;
@@ -1531,6 +1560,7 @@ input.form-address {
     margin: 15px;
     background: #2096F3; }
   .article-notification-box h5 {
+    box-sizing: border-box;
     width: 100%;
     background: #1976D2;
     padding: 12px 15px 8px 15px;

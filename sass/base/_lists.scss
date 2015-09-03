@@ -240,6 +240,7 @@ ul.list-style-six {
     padding: 20px 15px;
     border-bottom: 1px solid darken($colourOneMed, 4%);
     position: relative;
+    box-sizing: border-box;
 
     &:hover {
       background: darken($colourOneMed, 4%);

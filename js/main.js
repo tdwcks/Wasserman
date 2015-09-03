@@ -146,6 +146,8 @@ $(function() {
         body.toggleClass('card-expand-active');
       });
 
+    $('.list-style-seven li h5').attr('contenteditable','true');
+
 
 
 
