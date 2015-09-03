@@ -129,4 +129,24 @@ $(function() {
         return false;
 
         });
+
+    // Make height of left and right side of suppliers the same 
+
+    var leftSideSuppliers = $('.js-left-suppliers').height();
+        rightSideSuppliers = $('.js-right-suppliers');
+
+        rightSideSuppliers.css( "height", leftSideSuppliers );
+
+    // Expand comments Tab
+
+
+    var cardExpand = $('.element-card-expand');
+
+      cardExpand.click(function(){
+        body.toggleClass('card-expand-active');
+      });
+
+
+
+
 }); // End of document.ready

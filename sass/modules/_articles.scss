@@ -179,6 +179,8 @@
   @include calc(width, "100% - 400px");
   @include calc(height, "100vh - 33px");
   float: right;
+  height: auto;
+  overflow: auto;
 
   @include mq("medium", "max-width") {
     width: 100%;
@@ -251,10 +253,12 @@
 
 .article-supplier-card {
   @include calc(width, "100% - 50px");
+  border: $lines;
   display: block;
   margin: 0 auto;
   height: auto;
   overflow: auto;
   background: #fff;
   box-sizing: border-box;
+  margin-bottom: 25px;
 }

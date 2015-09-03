@@ -261,6 +261,63 @@ ul.list-style-six {
   }
 }
 
+ul.list-style-seven {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  padding: 15px 0 25px 25px;
+  border-bottom: $lines;
 
+  li {
+    @include calc(width, "100% - 100px");
+    padding: 0;
+    margin: 0;
+    border-bottom: $lines;
+    float: right;
+    height: auto;
+    overflow: auto;
 
+    h5 {
+      padding-top: 1em;
+      line-height: 1.45;
+    }
 
+    h5.type-light {
+      padding-top: 0;
+      padding-bottom: 1em;
+    }
+
+    p.type-bold {
+      padding-top: 0.1em;
+      margin-top: 0;
+    }
+
+    a {
+      padding: 20px 0;
+      display: block;
+
+      i {
+        vertical-align: -5px;
+        padding-right: 10px;
+      }
+    }
+  }
+  
+  li.list-no-bottom-border {
+    border-bottom: 0px;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  &:first-child {
+    
+  }
+}
+
+ul.list-no-bottom-border {
+  border-bottom: 0px;
+}

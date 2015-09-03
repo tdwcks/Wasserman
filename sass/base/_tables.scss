@@ -78,6 +78,7 @@ table {
     }
   }
 
+
   @include mq("small", "max-width") {
     @include calc(width, "100% - 84px");
 
@@ -142,6 +143,9 @@ table {
     width: 50%;
     font-family: $mainFont;
   }
+}
 
+tr.js-table-row-link {
+  cursor: pointer;
 }
 

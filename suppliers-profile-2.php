@@ -327,7 +327,7 @@
 
             <span>1 of 17</span>
 
-            <div class="element-supplier-switcher">
+            <div class="element-float-right">
 
               <i class="material-icons">keyboard_arrow_left</i>
 
@@ -341,21 +341,25 @@
 
             <div class="element-supplier-description">
 
-              <h5>We design digital products which help your organisation do great work. Underpinned by the latest technology and user-centric design our aim is to bring a human touch to the digital world.</h5>
+              <p>Miln design digital products which help your organisation do great work. Underpinned by the latest technology and user-centric design our aim is to bring a human touch to the digital world.</p>
 
             </div>  <!-- element-supplier-basics -->
 
-            <div class="element-supplier-expand">
+            <div class="element-card-expand">
 
               <i class="material-icons">check_circle</i>
 
               <h4>Used Before</h4>
 
-              <span>Comments</span>
+              <div class="element-float-right">
 
-              <i class="material-icons">keyboard_arrow_down</i>
+                <span>Comments</span>
 
-            </div> <!-- element-supplier-expand -->
+                <i class="material-icons">keyboard_arrow_down</i>
+
+              </div>
+
+            </div> <!-- element-card-expand -->
 
             <div class="element-comment-holder">
 
@@ -367,6 +371,8 @@
 
                 </div> <!-- element-comment-bubble -->
 
+                <div class="element-bubble-triangle"></div>
+
                 <span>Ed Myhill</span>
 
                 <span>emyhill@wmgllc.com</span>
@@ -377,9 +383,11 @@
 
                 <div class="element-comment-bubble">
 
-                  <p>Coming from experience at startups, agencies, and full-time freelance, Alexander’s process is limber and eclectic avenue yeah wooo woo woo.</p>
+                  <p>Coming from experience at startups, agencies, and full-time Coming from experience at startups, agencies, and full-time  Coming from experience at startups, agencies, and full-time  Coming from experience at startups, agencies, and full-time freelance, Alexander’s process is limber and eclectic avenue yeah wooo woo woo.</p>
 
                 </div> <!-- element-comment-bubble -->
+
+                <div class="element-bubble-triangle"></div>
 
                 <span>Ed Myhill</span>
 
@@ -389,21 +397,37 @@
 
               <div class="element-comment">
 
-                <form>
+                <div class="element-comment-bubble">
 
-                  <i class="material-icons md-18">send</i>
+                  <p>Coming from experience at startups, agencies, and full-time Coming from experience at startups, agencies, and full-time  Coming from experience at startups, agencies, and full-time  Coming from experience at startups, agencies, and full-time freelance, Alexander’s process is limber and eclectic avenue yeah wooo woo woo.</p>
 
-                  <input type="search" placeholder=Write your own feedback…>
+                </div> <!-- element-comment-bubble -->
 
-                </form>
+                <div class="element-bubble-triangle"></div>
+
+                <span>Ed Myhill</span>
+
+                <span>emyhill@wmgllc.com</span>
 
               </div> <!-- element-comment -->
 
             </div> <!-- element-comment-holder -->
 
-            <div class="element-supplier-basic">
+            <div class="element-comment-form">
 
-                <ul class="list-style-seven">
+              <form>
+
+                <i class="material-icons md-18">send</i>
+
+                <input type="form-full" placeholder=Write your own feedback…>
+
+              </form>
+
+            </div> <!-- element-comment -->
+
+            <div class="element-supplier-basic js-left-suppliers">
+
+                <ul class="list-style-seven list-no-bottom-border">
 
                   <span class="element-type-initials">ML</span>
 
@@ -443,67 +467,99 @@
 
                 </ul> <!-- list-style-seven -->
 
-                <ul class="list-style-seven">
+                <div class="element-right-border js-right-suppliers">
 
-                  <span class="element-type-initials">JC</span>
+                  <ul class="list-style-seven">
 
-                  <li>
+                    <span class="element-type-initials">JC</span>
 
-                    <h5>James Clare</h5>
+                    <li>
 
-                    <h5 class="type-light">Developer</h5>
+                      <h5>James Clare</h5>
 
-                  </li>
+                      <h5 class="type-light">Developer</h5>
 
-                  <li>
+                    </li>
 
-                    <p>07538 947460</p>
+                    <li>
 
-                  </li>
+                      <p>07538 947460</p>
 
-                  <li>
+                    </li>
 
-                    <p>james@miln.co</p>
+                    <li class="list-no-bottom-border">
 
-                  </li>
+                      <p>james@miln.co</p>
 
-                </ul> <!-- list-style-seven -->
+                    </li>
 
-                <ul class="list-style-seven">
+                  </ul> <!-- list-style-seven -->
 
-                  <span class="element-type-initials">TW</span>
+                  <ul class="list-style-seven">
 
-                  <li>
+                    <span class="element-type-initials">JC</span>
 
-                    <h5>Tom Wicks</h5>
+                    <li>
 
-                    <h5 class="type-light">Designer</h5>
+                      <h5>James Clare</h5>
 
-                  </li>
+                      <h5 class="type-light">Developer</h5>
 
-                  <li>
+                    </li>
 
-                    <p>07538 947460</p>
+                    <li>
 
-                  </li>
+                      <p>07538 947460</p>
 
-                  <li>
+                    </li>
 
-                    <p>tom@miln.co</p>
+                    <li class="list-no-bottom-border">
 
-                  </li>
+                      <p>james@miln.co</p>
 
-                  <li>
+                    </li>
 
-                    <a href=""><i class="material-icons">add</i>Add New Contact</a>
+                  </ul> <!-- list-style-seven -->
 
-                  </li>
+                  <ul class="list-style-seven">
 
-                </ul> <!-- list-style-seven -->
+                    <span class="element-type-initials">JC</span>
+
+                    <li>
+
+                      <h5>James Clare</h5>
+
+                      <h5 class="type-light">Developer</h5>
+
+                    </li>
+
+                    <li>
+
+                      <p>07538 947460</p>
+
+                    </li>
+
+                    <li class="list-no-bottom-border">
+
+                      <p>james@miln.co</p>
+
+                    </li>
+
+                  </ul> <!-- list-style-seven -->
+
+                  <a class="link-style-six">
+
+                    <i class="material-icons md-18">add</i>
+
+                    <span>Add Additional Contact</span>
+
+                  </a>
+
+                </div> <!-- element-right-border -->
 
             </div> <!-- element-supplier-basic -->
 
-        </article> <!-- element-comment-holder -->
+        </article> <!-- article-supplier-card -->
 
     </article> <!-- article-main-content -->
 

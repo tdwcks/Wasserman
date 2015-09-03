@@ -727,7 +727,7 @@
 
 .element-supplier-header {
   width: 100%;
-  padding: 24px 24px;
+  padding: 24px 24px 13px 24px;
   overflow: auto;
   height: auto;
   box-sizing: border-box;
@@ -741,10 +741,179 @@
     color: $colourTypeLight;
     padding-left: 25px;
   }
+}
 
-  .element-supplier-switcher {
-    float: right;
+.element-supplier-description {
+  padding: 15px 25px;
+  box-sizing: border-box;
+  background: $colourOne;
+  
+  p {
+    width: 55%;
+    color: #fff;
+    font-size: 1.125em;
+  }
+}
+
+.element-card-expand {
+  width: 100%;
+  padding: 15px 24px 15px 24px;
+  overflow: auto;
+  height: auto;
+  box-sizing: border-box;
+  background: $colourOneMed;
+  color: #fff;
+  cursor: pointer;
+
+  i {
+    opacity: 0.8;
+    margin-top: 5px;
+    display: inline-block;
+    
   }
 
+  h4 {
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: 5px;
+    color: #fff;
+  }
 
+  span {
+    vertical-align: 5px;
+    color: #fff;
+  }
+
+  .card-expand-active & {
+    
+    i:last-child {
+      @include transform(rotate(180deg));
+    }
+  }
+
+}
+
+.element-comment-holder {
+  padding: 25px 25px;
+  height: auto;
+  overflow: auto;
+  box-sizing: border-box;
+  background: $colourOne;
+  display: none;
+
+  .card-expand-active & {
+    display: block;
+  }
+}
+
+.element-comment {
+  position: relative;
+  @include calc(width, "50% - 12px");
+  float: left;
+  height: auto;
+  overflow: auto;
+  margin-bottom: 25px;
+
+  span {
+    display: inline;
+    color: #fff;
+    margin-top: 0;
+    padding-left: 30px;
+
+    &:last-child {
+      vertical-align: 10px;
+      float: right;
+    }
+  }
+
+  &:first-child {
+    margin-right: 24px;
+  }
+}
+
+.element-bubble-triangle {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 50px 0 0;
+  border-color: $colourOneMed transparent transparent transparent;
+}
+
+.element-comment-bubble {
+  position: relative;
+  background: $colourOneMed;
+  padding: 0 15px;
+  margin-bottom: 15px;
+  @include border-radius(5px);
+  box-sizing: border-box;
+  height: auto;
+  overflow: auto;
+  
+  float: left;
+
+  p {
+    color: #fff;
+    float: left;
+  }
+}
+
+.element-comment-form {
+  width: 100%;
+  clear: both;
+  background: $colourOneDark;
+  padding: 10px 25px 15px 25px;
+  box-sizing: border-box;
+
+  i {
+    color: #fff;
+    padding-top: 8px;
+    display: inline-block;
+  }
+}
+
+.element-supplier-basic {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+
+.element-right-border {
+  border-left: $lines;
+  padding: 0 0;
+  height: auto;
+  overflow: auto;
+  width: 49.8%;
+  float: left;
+
+  .list-style-seven {
+    width: 100%;
+  }
+
+  .list-style-seven {
+    border-bottom: $lines;
+  }
+}
+
+.element-type-initials {
+  margin-top: 15px;
+  width: 50px;
+  padding-top: 17px;
+  @include border-radius(100%);
+  min-height: 50px;
+  height: 25px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: center;
+  color: #fff;
+  background: darken($colourBackgroundDark, 10%);
+  text-align: center;
+}
+
+.element-float-right {
+  float: right;
 }
